@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>我的行程｜日本旅遊規劃</title>
+<meta name="description" content="大阪・京都・奈良 6 日行程隨身手冊：行程、訂位與預算、注意事項、打包清單。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="my-trip">
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span>日本</span>旅遊規劃</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">首頁</a></li>
+        <li><a href="my-trip.html" data-page="my-trip">我的行程</a></li>
+        <li><a href="attractions.html" data-page="attractions">景點介紹</a></li>
+        <li><a href="planner.html" data-page="planner">行程規劃</a></li>
+        <li><a href="food-lodging.html" data-page="food-lodging">美食住宿</a></li>
+        <li><a href="info.html" data-page="info">實用資訊</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="trip-header">
+  <div class="container">
+    <h1 id="trip-title"></h1>
+    <p id="trip-sub"></p>
+  </div>
+</section>
+
+<nav class="trip-tabs" id="trip-tabs">
+  <button data-tab="plan" class="active">行程</button>
+  <button data-tab="book">訂位與預算</button>
+  <button data-tab="note">注意事項</button>
+  <button data-tab="pack">打包</button>
+</nav>
+
+<main class="container">
+
+  <section class="trip-panel active" id="panel-plan">
+    <div class="day-chips" id="day-chips"></div>
+    <div class="day-title-block" id="day-title-block"></div>
+    <div class="timeline" id="day-timeline"></div>
+
+    <h2 class="trip-section-title">常用交通路線參考</h2>
+    <div style="overflow-x:auto">
+      <table class="route-table">
+        <thead>
+          <tr><th>路線</th><th>建議交通</th><th>預估時間</th><th>注意事項</th></tr>
+        </thead>
+        <tbody id="route-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="trip-panel" id="panel-book">
+    <h2 class="trip-section-title">訂位／預算待辦清單</h2>
+    <p style="color:var(--color-text-light); font-size:0.88rem; margin-bottom:16px">
+      整理自旅遊預算表，金額尚未填入，先列出需要確認或預訂的項目。
+    </p>
+    <div style="overflow-x:auto">
+      <table class="budget-list">
+        <thead>
+          <tr><th>項目</th><th>人數／數量</th><th>狀態</th></tr>
+        </thead>
+        <tbody id="budget-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="trip-panel" id="panel-note">
+    <h2 class="trip-section-title">注意事項</h2>
+    <p style="color:var(--color-text-light); font-size:0.88rem; margin-bottom:10px">
+      行程仍在規劃中，以下依每日整理目前還待確認／待預訂的項目。
+    </p>
+    <div id="notes-list"></div>
+  </section>
+
+  <section class="trip-panel" id="panel-pack">
+    <h2 class="trip-section-title">打包清單</h2>
+    <p style="color:var(--color-text-light); font-size:0.88rem; margin-bottom:10px">
+      點選項目可打勾，紀錄保存在這台裝置的瀏覽器中。
+    </p>
+    <div class="pack-list" id="pack-list"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4><span style="color:#fff">日本</span>旅遊規劃</h4>
+      <p>蒐集景點靈感、規劃每日行程的個人旅遊工具網站。</p>
+    </div>
+    <div class="footer-col">
+      <h4>導覽</h4>
+      <a href="my-trip.html">我的行程</a>
+      <a href="attractions.html">景點介紹</a>
+      <a href="planner.html">行程規劃</a>
+      <a href="food-lodging.html">美食住宿</a>
+      <a href="info.html">實用資訊</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="footer-year"></span> 日本旅遊規劃．內容僅供個人旅遊參考
+  </div>
+</footer>
+
+<script src="js/trip-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/trip.js"></script>
+</body>
+</html>
