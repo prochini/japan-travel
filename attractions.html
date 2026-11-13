@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>景點介紹｜日本旅遊規劃</title>
+<meta name="description" content="依地區與類型瀏覽日本熱門景點，一鍵加入行程規劃。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="attractions">
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span>日本</span>旅遊規劃</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">首頁</a></li>
+        <li><a href="attractions.html" data-page="attractions">景點介紹</a></li>
+        <li><a href="planner.html" data-page="planner">行程規劃</a></li>
+        <li><a href="food-lodging.html" data-page="food-lodging">美食住宿</a></li>
+        <li><a href="info.html" data-page="info">實用資訊</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" style="padding:56px 0 36px">
+  <div class="container">
+    <h1>景點介紹</h1>
+    <p>依地區與類型篩選景點，看到喜歡的直接加入行程規劃。（文案為範例，待正式內容替換）</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="filter-bar" id="region-filter">
+      <button class="filter-chip active" data-region="all">全部地區</button>
+    </div>
+    <div class="filter-bar" id="category-filter">
+      <button class="filter-chip active" data-category="all">全部類型</button>
+    </div>
+    <div class="card-grid" id="attraction-grid"></div>
+    <p class="empty-state" id="empty-state" style="display:none">找不到符合條件的景點，試試其他篩選條件。</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4><span style="color:#fff">日本</span>旅遊規劃</h4>
+      <p>蒐集景點靈感、規劃每日行程的個人旅遊工具網站。</p>
+    </div>
+    <div class="footer-col">
+      <h4>導覽</h4>
+      <a href="attractions.html">景點介紹</a>
+      <a href="planner.html">行程規劃</a>
+      <a href="food-lodging.html">美食住宿</a>
+      <a href="info.html">實用資訊</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="footer-year"></span> 日本旅遊規劃．內容僅供個人旅遊參考
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const grid = document.querySelector("#attraction-grid");
+  const emptyState = document.querySelector("#empty-state");
+  const regionFilterBar = document.querySelector("#region-filter");
+  const categoryFilterBar = document.querySelector("#category-filter");
+
+  let activeRegion = "all";
+  let activeCategory = "all";
+
+  Object.entries(REGIONS).forEach(([key, r]) => {
+    const btn = document.createElement("button");
+    btn.className = "filter-chip";
+    btn.dataset.region = key;
+    btn.textContent = r.name;
+    regionFilterBar.appendChild(btn);
+  });
+
+  const categories = [...new Set(ATTRACTIONS.map((a) => a.category))];
+  categories.forEach((c) => {
+    const btn = document.createElement("button");
+    btn.className = "filter-chip";
+    btn.dataset.category = c;
+    btn.textContent = c;
+    categoryFilterBar.appendChild(btn);
+  });
+
+  function setActiveChip(bar, value, attr) {
+    bar.querySelectorAll(".filter-chip").forEach((chip) => {
+      chip.classList.toggle("active", chip.dataset[attr] === value);
+    });
+  }
+
+  regionFilterBar.addEventListener("click", (e) => {
+    const btn = e.target.closest(".filter-chip");
+    if (!btn) return;
+    activeRegion = btn.dataset.region;
+    setActiveChip(regionFilterBar, activeRegion, "region");
+    render();
+  });
+
+  categoryFilterBar.addEventListener("click", (e) => {
+    const btn = e.target.closest(".filter-chip");
+    if (!btn) return;
+    activeCategory = btn.dataset.category;
+    setActiveChip(categoryFilterBar, activeCategory, "category");
+    render();
+  });
+
+  function addToPlanner(id) {
+    const pending = JSON.parse(localStorage.getItem("jt_pending") || "[]");
+    if (!pending.includes(id)) pending.push(id);
+    localStorage.setItem("jt_pending", JSON.stringify(pending));
+    showToast("已加入待規劃清單，前往「行程規劃」加入天數吧！");
+  }
+
+  function render() {
+    const filtered = ATTRACTIONS.filter((a) => {
+      const regionOk = activeRegion === "all" || a.region === activeRegion;
+      const categoryOk = activeCategory === "all" || a.category === activeCategory;
+      return regionOk && categoryOk;
+    });
+
+    grid.innerHTML = "";
+    emptyState.style.display = filtered.length ? "none" : "block";
+
+    filtered.forEach((item) => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="placeholder-img" data-label="${item.name}" style="height:160px"></div>
+        <div class="card-body">
+          <h3>${item.name}</h3>
+          <div class="card-meta"><span class="tag">${REGIONS[item.region].name}</span><span class="tag">${item.category}</span></div>
+          <p class="card-desc">${item.desc}</p>
+          <div class="card-foot">
+            <span class="card-cost">${item.cost ? "約 ¥" + item.cost.toLocaleString() : "免費"}</span>
+            <button class="btn btn-primary btn-small" data-add="${item.id}">加入行程</button>
+          </div>
+        </div>`;
+      grid.appendChild(card);
+    });
+  }
+
+  grid.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-add]");
+    if (!btn) return;
+    addToPlanner(btn.dataset.add);
+  });
+
+  render();
+</script>
+</body>
+</html>

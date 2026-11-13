@@ -1,16 +1,125 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日本旅遊</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>日本旅遊規劃｜首頁</title>
+<meta name="description" content="日本旅遊規劃網站：景點介紹、行程規劃工具、美食住宿與實用資訊。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <main>
-    <h1>日本旅遊</h1>
-    <p>專案建立中，內容規劃後將於此更新。</p>
-  </main>
-  <script src="js/main.js"></script>
+<body data-page="home">
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span>日本</span>旅遊規劃</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">首頁</a></li>
+        <li><a href="attractions.html" data-page="attractions">景點介紹</a></li>
+        <li><a href="planner.html" data-page="planner">行程規劃</a></li>
+        <li><a href="food-lodging.html" data-page="food-lodging">美食住宿</a></li>
+        <li><a href="info.html" data-page="info">實用資訊</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>規劃一場屬於你的日本旅行</h1>
+    <p>蒐集景點、安排每日行程、試算預算——從靈感到出發，一站完成。（文案為範例，待正式內容替換）</p>
+    <div class="hero-actions">
+      <a href="planner.html" class="btn btn-primary">開始規劃行程</a>
+      <a href="attractions.html" class="btn btn-outline">先逛逛景點</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>熱門景點精選</h2>
+      <p>從東京到沖繩，先來看看旅人們最常造訪的地方。</p>
+    </div>
+    <div class="card-grid" id="home-highlights"></div>
+    <div class="section-foot">
+      <a href="attractions.html" class="btn btn-outline btn-small">查看所有景點</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>三步驟，規劃你的行程</h2>
+      <p>不用試算表，直接在網站上安排每天的景點與預算。</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-body">
+          <h3>1. 挑選景點</h3>
+          <p class="card-desc">瀏覽景點介紹，依地區與類型篩選喜歡的地方。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>2. 安排每日行程</h3>
+          <p class="card-desc">在行程規劃工具中新增天數，拖曳排序景點順序。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>3. 試算預算並匯出</h3>
+          <p class="card-desc">自動加總花費，完成後可儲存或匯出整份行程。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4><span style="color:#fff">日本</span>旅遊規劃</h4>
+      <p>蒐集景點靈感、規劃每日行程的個人旅遊工具網站。</p>
+    </div>
+    <div class="footer-col">
+      <h4>導覽</h4>
+      <a href="attractions.html">景點介紹</a>
+      <a href="planner.html">行程規劃</a>
+      <a href="food-lodging.html">美食住宿</a>
+      <a href="info.html">實用資訊</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="footer-year"></span> 日本旅遊規劃．內容僅供個人旅遊參考
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const highlightIds = ["a1", "a4", "a11", "a12"];
+  const wrap = document.querySelector("#home-highlights");
+  highlightIds.forEach((id) => {
+    const item = ATTRACTIONS.find((a) => a.id === id);
+    if (!item) return;
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <div class="placeholder-img" data-label="${item.name}" style="height:160px"></div>
+      <div class="card-body">
+        <h3>${item.name}</h3>
+        <div class="card-meta"><span class="tag">${REGIONS[item.region].name}</span><span class="tag">${item.category}</span></div>
+        <p class="card-desc">${item.desc}</p>
+      </div>`;
+    wrap.appendChild(card);
+  });
+</script>
 </body>
 </html>

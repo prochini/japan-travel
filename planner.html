@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>行程規劃｜日本旅遊規劃</title>
+<meta name="description" content="逐日安排景點、試算預算、查看地區分布，完成後儲存或匯出行程。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="planner">
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span>日本</span>旅遊規劃</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">首頁</a></li>
+        <li><a href="attractions.html" data-page="attractions">景點介紹</a></li>
+        <li><a href="planner.html" data-page="planner">行程規劃</a></li>
+        <li><a href="food-lodging.html" data-page="food-lodging">美食住宿</a></li>
+        <li><a href="info.html" data-page="info">實用資訊</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" style="padding:56px 0 30px">
+  <div class="container">
+    <h1>行程規劃</h1>
+    <p>新增天數、安排景點順序、試算預算。內容會自動儲存在這台裝置的瀏覽器中。</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+
+    <div class="planner-toolbar">
+      <button class="btn btn-primary" id="add-day-btn">＋ 新增一天</button>
+      <div style="display:flex; gap:10px">
+        <button class="btn btn-outline btn-small" id="export-btn">匯出行程</button>
+        <button class="btn btn-outline btn-small" id="reset-btn">清空行程</button>
+      </div>
+    </div>
+
+    <div class="planner-layout">
+      <div>
+        <div class="panel" id="pending-panel" style="display:none; margin-bottom:20px">
+          <h3>待加入景點</h3>
+          <div class="pending-list" id="pending-list"></div>
+        </div>
+
+        <div id="days-container"></div>
+        <p class="empty-state" id="days-empty" style="display:none">還沒有任何天數，點擊上方「新增一天」開始規劃吧！</p>
+      </div>
+
+      <aside class="planner-side">
+        <div class="panel">
+          <h3>預算試算</h3>
+          <div class="budget-row">
+            <span>景點／美食／住宿小計</span>
+            <span id="budget-items">¥0</span>
+          </div>
+          <div class="budget-row">
+            <span>交通費（預估）</span>
+            <input type="number" id="budget-transport" min="0" step="100" value="0" />
+          </div>
+          <div class="budget-row">
+            <span>其他花費（預估）</span>
+            <input type="number" id="budget-other" min="0" step="100" value="0" />
+          </div>
+          <div class="budget-total">
+            <span>總預算</span>
+            <span id="budget-total">¥0</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>地區分布地圖（示意）</h3>
+          <div class="map-box" id="map-box"></div>
+          <p class="map-note">依行程中景點所屬地區標示，非精確地理位置</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4><span style="color:#fff">日本</span>旅遊規劃</h4>
+      <p>蒐集景點靈感、規劃每日行程的個人旅遊工具網站。</p>
+    </div>
+    <div class="footer-col">
+      <h4>導覽</h4>
+      <a href="attractions.html">景點介紹</a>
+      <a href="planner.html">行程規劃</a>
+      <a href="food-lodging.html">美食住宿</a>
+      <a href="info.html">實用資訊</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="footer-year"></span> 日本旅遊規劃．內容僅供個人旅遊參考
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>
