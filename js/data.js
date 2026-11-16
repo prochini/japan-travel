@@ -37,4 +37,8 @@ const FOOD_LODGING = [
   { id: "f6", name: "博多一口餃子屋台", region: "kyushu", type: "美食", cost: 900, desc: "福岡屋台文化代表，道地博多風味。（範例文字）" },
   { id: "f7", name: "運河畔溫泉旅館", region: "hokkaido", type: "住宿", cost: 6800, desc: "可一邊泡湯一邊欣賞運河夜景。（範例文字）" },
   { id: "f8", name: "海景度假飯店", region: "okinawa", type: "住宿", cost: 5200, desc: "步行可達海灘的度假型飯店。（範例文字）" },
+  { id: "f9", name: "すし酒場さしす なんばウォーク店", region: "kansai", type: "美食", cost: 3000, desc: "立食壽司酒場，12/6 晚餐候選（目前行程已排入）。", map: "https://maps.app.goo.gl/k4CQa3JcPUibjGK98" },
+  { id: "f10", name: "Gyutan Charcoal Grilled YOSHIJI（心齋橋店）", region: "kansai", type: "美食", cost: 4500, desc: "炭火烤牛舌專門店，燒肉晚餐候選之一，尚未排入行程。", map: "https://maps.app.goo.gl/hCta7roMFWSjHHsP8" },
+  { id: "f11", name: "炭火燒肉 大歡（東心齋橋）", region: "kansai", type: "美食", cost: 7800, desc: "國產黑毛和牛喝到飽套餐，約 6,800–8,800 日圓／人，燒肉晚餐候選之一，尚未排入行程。", map: "https://tabelog.com/tw/osaka/A2701/A270201/27100447/" },
+  { id: "f12", name: "BATTEN YOKATO AMERIKAMURA（博多串焼き）", region: "kansai", type: "美食", cost: 3000, desc: "美國村居酒屋，博多串燒，Google 評分 4.0（596 則評論），尚未排入行程。", map: "https://maps.app.goo.gl/ebhKwpfgNvwtneaKA" },
 ];

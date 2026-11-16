@@ -139,6 +139,7 @@
           <h3>${item.name}</h3>
           <div class="card-meta"><span class="tag">${REGIONS[item.region].name}</span><span class="tag">${item.type}</span></div>
           <p class="card-desc">${item.desc}</p>
+          ${item.map ? `<a class="card-link" href="${item.map}" target="_blank" rel="noopener">在 Google 地圖查看</a>` : ""}
           <div class="card-foot">
             <span class="card-cost">約 ¥${item.cost.toLocaleString()}</span>
             <button class="btn btn-primary btn-small" data-add="${item.id}">加入行程</button>

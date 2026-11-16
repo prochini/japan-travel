@@ -354,6 +354,12 @@ ul {
   flex: 1;
 }
 
+.card-link {
+  font-size: 0.82rem;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .card-foot {
   display: flex;
   align-items: center;
