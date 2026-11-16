@@ -941,6 +941,32 @@ ul {
 .badge-warn { background: #fdf0d8; color: #a9700f; }
 .badge-info { background: #eceff3; color: #5b6472; }
 
+.tip-block {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.tip-block h4 {
+  margin: 0 0 8px;
+  font-size: 0.92rem;
+  color: var(--color-navy);
+}
+
+.tip-block ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.86rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.tip-block li + li {
+  margin-top: 4px;
+}
+
 .trip-note-day {
   font-size: 0.82rem;
   font-weight: 700;

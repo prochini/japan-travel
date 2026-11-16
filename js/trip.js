@@ -56,6 +56,25 @@ function renderDay() {
     `;
     timeline.appendChild(item);
   });
+
+  const tipsWrap = document.querySelector("#day-tips");
+  tipsWrap.innerHTML = "";
+  if (day.tips) {
+    const title = document.createElement("h2");
+    title.className = "trip-section-title";
+    title.textContent = day.tips.heading;
+    tipsWrap.appendChild(title);
+
+    day.tips.sections.forEach((section) => {
+      const block = document.createElement("div");
+      block.className = "tip-block";
+      block.innerHTML = `
+        <h4>${section.h}</h4>
+        <ul>${section.items.map((i) => `<li>${i}</li>`).join("")}</ul>
+      `;
+      tipsWrap.appendChild(block);
+    });
+  }
 }
 
 function renderRoutes() {
