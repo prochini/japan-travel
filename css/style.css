@@ -858,6 +858,28 @@ ul {
   margin-bottom: 8px;
 }
 
+.day-hero {
+  margin: 14px 0 0;
+}
+
+.day-hero img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.day-hero figcaption {
+  font-size: 0.74rem;
+  color: var(--color-text-light);
+  margin-top: 4px;
+}
+
+.day-hero figcaption a {
+  color: inherit;
+}
+
 .timeline {
   position: relative;
   padding-left: 26px;

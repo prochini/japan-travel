@@ -37,6 +37,14 @@ function renderDay() {
   document.querySelector("#day-title-block").innerHTML = `
     <span class="region-tag">${day.region}</span>
     <h2>${day.date}（${day.w}）${day.title}</h2>
+    ${
+      day.img
+        ? `<figure class="day-hero">
+             <img src="${day.img}" alt="${day.imgAlt || day.title}" loading="lazy" />
+             ${day.imgCredit ? `<figcaption>${day.imgCredit}</figcaption>` : ""}
+           </figure>`
+        : ""
+    }
   `;
 
   const timeline = document.querySelector("#day-timeline");

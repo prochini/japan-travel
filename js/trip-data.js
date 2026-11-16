@@ -10,15 +10,21 @@ const TRIP_INFO = {
 const TRIP_DAYS = [
   {
     date: "12/6", w: "日", region: "大阪", title: "大阪抵達",
+    img: "images/spots/dotonbori.jpg",
+    imgAlt: "道頓堀夜景",
+    imgCredit: "圖片：Kang-min Liu（CC BY 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:%E5%8A%9B%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%82%88%E3%81%86%E6%97%A5%E6%9C%AC_2014_%E5%A4%A7%E9%98%AA_(12206068196).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
       { tm: "13:10", t: "抵達關西機場 T1｜AK170", d: "高雄 09:00 起飛，關西機場 13:10 落地", tr: "南海電鐵／JR 至大阪市區", note: "航班 AK170 已確認", st: "ok" },
       { tm: "15:30–16:30（估）", t: "入住", d: "14:30 左右搭車前往大阪，入住 Apartment Hotel 11 Kuromon 2（住一 黑門2号店）", tr: "步行／地鐵", note: "地址：〒542-0073 大阪市中央区日本橋2-1-19", st: "ok" },
       { tm: "18:00", t: "道頓堀夜景・御堂筋彩燈散步", d: "免費的聖誕限定點燈，順路看道頓堀夜景", tr: "步行", note: "免費景點，配合晚餐順路走", st: "info" },
-      { tm: "19:00–20:00", t: "心齋橋晚餐", d: "章魚燒、晚餐候選：<a href=\"https://maps.app.goo.gl/k4CQa3JcPUibjGK98\" target=\"_blank\" rel=\"noopener\">すし酒場さしす（なんばウォーク店）</a>", tr: "步行", note: "抵達日不要排太滿，餐廳尚未訂位", st: "warn" },
+      { tm: "19:00–20:00", t: "心齋橋晚餐", d: "章魚燒、晚餐候選：<a href=\"https://maps.app.goo.gl/k4CQa3JcPUibjGK98\" target=\"_blank\" rel=\"noopener\">すし酒場さしす なんばウォーク店（Sushi Sakaba Sashisu）</a>", tr: "步行", note: "抵達日不要排太滿，餐廳尚未訂位", st: "warn" },
     ],
   },
   {
     date: "12/7", w: "一", region: "京都", title: "嵐山・祇園",
+    img: "images/spots/arashiyama-bamboo.jpg",
+    imgAlt: "嵐山竹林小徑",
+    imgCredit: "圖片：Bjørn Christian Tørrissen（CC BY-SA 4.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Arashiyama-Bamboo-Grove-Sunset.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
       { tm: "08:00–09:30", t: "大阪→嵐山", d: "阪急或 JR 轉乘", tr: "電車", note: "依住宿站點調整", st: "info" },
       { tm: "09:30–12:00", t: "嵐山竹林・渡月橋", d: "竹林、桂川河岸散步", tr: "步行", note: "自然風景景點", st: "info" },
@@ -114,6 +120,9 @@ const TRIP_DAYS = [
   },
   {
     date: "12/9", w: "三", region: "箕面・大阪", title: "箕面瀑布・大阪城燈光祭",
+    img: "images/spots/osaka-castle.jpg",
+    imgAlt: "大阪城天守閣",
+    imgCredit: "圖片：663highland（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Osaka_Castle_02bs3200.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
       { tm: "08:30–10:00", t: "大阪→箕面站", d: "阪急電車轉乘", tr: "電車", note: "依住宿站點估算", st: "info" },
       { tm: "10:00–13:00", t: "箕面瀑布健行", d: "森林溪流步道往返，約 2–3 小時", tr: "步行", note: "出發前查步道開放及天氣", st: "info" },
@@ -126,6 +135,9 @@ const TRIP_DAYS = [
   },
   {
     date: "12/10", w: "四", region: "奈良", title: "奈良公園・東大寺",
+    img: "images/spots/todaiji.jpg",
+    imgAlt: "東大寺大佛殿",
+    imgCredit: "圖片：663highland（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Daibutsu-den_in_Todaiji_Nara02bs3200.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
       { tm: "08:30–10:00", t: "大阪→近鐵奈良", d: "近鐵電車", tr: "電車", note: "難波出發較方便", st: "info" },
       { tm: "10:00–12:30", t: "奈良公園・東大寺", d: "鹿群、古蹟與公園步道", tr: "電車", note: "留意鹿群與餵食規範", st: "info" },
