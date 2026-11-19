@@ -848,8 +848,15 @@ ul {
 
 .day-map-actions {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
+  gap: 10px;
   margin-top: 8px;
+}
+
+.day-map-hint {
+  font-size: 0.78rem;
+  color: var(--color-text-light);
 }
 
 .geo-link {

@@ -72,11 +72,13 @@ function renderDayMap(day) {
   }, 0);
 
   if (linkEl) {
-    const coords = stops.map((s) => `${s.lat},${s.lng}`);
-    const origin = coords[0];
-    const destination = coords[coords.length - 1];
-    const waypoints = coords.slice(1, -1).join("|");
-    let url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=transit`;
+    const queries = stops.map((s) => encodeURIComponent(s.q || s.name));
+    const origin = day.mapOrigin ? encodeURIComponent(day.mapOrigin) : queries[0];
+    const destination = queries[queries.length - 1];
+    const waypoints = day.mapOrigin ? queries.slice(0, -1).join("|") : queries.slice(1, -1).join("|");
+    // 不指定 travelmode：Google 無法用單一大眾運輸行程串連多個停靠點，
+    // 不指定會改用可行的路線（如開車）完整顯示順序，再由使用者自行切換交通方式
+    let url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`;
     if (waypoints) url += `&waypoints=${waypoints}`;
     linkEl.href = url;
   }
