@@ -206,7 +206,7 @@ const TRIP_DAYS = [
     mapOrigin: HOTEL_ADDR,
     rows: [
       { tm: "08:00–10:00", t: "木津市場", d: "早餐、逛市場", tr: "步行／地鐵", note: "市場營業時間需確認", st: "warn", geo: "木津卸売市場, 日本" },
-      { tm: "10:00–10:30", t: "飯店退房", d: "Apartment Hotel 11 Kuromon 2（住一 黑門2号店）退房", tr: "步行", note: "", st: "info", geo: HOTEL_ADDR },
+      { tm: "10:00", t: "飯店退房", d: "Apartment Hotel 11 Kuromon 2（住一 黑門2号店）退房", tr: "步行", note: "", st: "info", geo: HOTEL_ADDR },
       { tm: "10:30–13:30", t: "前往關西機場・報到", d: "南海電鐵／JR 至關西機場，預留國際線報到與安檢時間", tr: "南海電鐵／JR", note: "AK171 第一航廈起飛，國際線建議提早 2–3 小時報到", st: "info", geo: "関西国際空港, 日本" },
       { tm: "14:10", t: "搭乘 AK171 返回高雄", d: "關西機場（KIX）第一航廈 14:10 起飛，預計 16:30 抵達小港國際機場（KHH）國際航廈", tr: "", note: "亞洲航空 AK171，訂位代號 PDINPM；飛行時間約 3 小時 20 分", st: "ok", geo: "関西国際空港, 日本" },
     ],
