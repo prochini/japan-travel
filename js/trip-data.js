@@ -18,7 +18,7 @@ const TRIP_DAYS = [
     imgAlt: "道頓堀夜景",
     imgCredit: "圖片：Kang-min Liu（CC BY 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:%E5%8A%9B%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%82%88%E3%81%86%E6%97%A5%E6%9C%AC_2014_%E5%A4%A7%E9%98%AA_(12206068196).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
-      { tm: "13:10", t: "抵達關西機場 T1｜AK170", d: "高雄 09:00 起飛，關西機場 13:10 落地", tr: "南海電鐵／JR 至大阪市區", note: "航班 AK170 已確認", st: "ok", geo: "関西国際空港, 日本" },
+      { tm: "13:10", t: "抵達關西機場 T1｜AK170", d: "小港國際機場（KHH）09:00 起飛，關西機場（KIX）第一航廈 13:10 落地", tr: "南海電鐵／JR 至大阪市區", note: "亞洲航空 AK170，訂位代號 PDINPM；飛行時間約 3 小時 10 分，機型空中巴士 A320，經濟艙，無免費託運行李（已加購 20 公斤）", st: "ok", geo: "関西国際空港, 日本" },
       { tm: "15:30–16:30（估）", t: "入住", d: "14:30 左右搭車前往大阪，入住 Apartment Hotel 11 Kuromon 2（住一 黑門2号店）", tr: "步行／地鐵", note: "地址：〒542-0073 大阪市中央区日本橋2-1-19", st: "ok", geo: HOTEL_ADDR },
       { tm: "16:30–18:00", t: "大阪城公園・天守閣", d: "護城河散步、天守閣參觀（視體力決定是否登閣）", tr: "地鐵谷町線，約 15–20 分", note: "由原 12/7 移至此日；12/6 日落約 16:47，天守閣最後入館約 16:00–16:30，到場時天色已暗，恐來不及登閣，建議以護城河外圍夜景散步為主", st: "warn", geo: "大阪城公園, 日本" },
       { tm: "18:30–19:30", t: "心齋橋晚餐", d: "章魚燒、晚餐候選：<a href=\"https://maps.app.goo.gl/k4CQa3JcPUibjGK98\" target=\"_blank\" rel=\"noopener\">🍣 すし酒場さしす なんばウォーク店（Sushi Sakaba Sashisu）</a>", tr: "地鐵，約 15–20 分", note: "抵達日不要排太滿，餐廳尚未訂位；由大阪城先回市區用餐", st: "warn", geo: "心斎橋, 日本" },
@@ -205,8 +205,10 @@ const TRIP_DAYS = [
     date: "12/11", w: "五", region: "大阪", title: "市場早餐・返程",
     mapOrigin: HOTEL_ADDR,
     rows: [
-      { tm: "上午（視航班）", t: "木津市場", d: "早餐、逛市場", tr: "步行／地鐵", note: "市場營業時間需確認", st: "warn", geo: "木津卸売市場, 日本" },
-      { tm: "依航班", t: "飯店退房・前往關西機場", d: "Apartment Hotel 11 Kuromon 2 退房，預留交通及報到時間", tr: "南海電鐵／JR", note: "回程班機時間待補", st: "warn", geo: "関西国際空港, 日本" },
+      { tm: "08:00–10:00", t: "木津市場", d: "早餐、逛市場", tr: "步行／地鐵", note: "市場營業時間需確認", st: "warn", geo: "木津卸売市場, 日本" },
+      { tm: "10:00–10:30", t: "飯店退房", d: "Apartment Hotel 11 Kuromon 2（住一 黑門2号店）退房", tr: "步行", note: "", st: "info", geo: HOTEL_ADDR },
+      { tm: "10:30–13:30", t: "前往關西機場・報到", d: "南海電鐵／JR 至關西機場，預留國際線報到與安檢時間", tr: "南海電鐵／JR", note: "AK171 第一航廈起飛，國際線建議提早 2–3 小時報到", st: "info", geo: "関西国際空港, 日本" },
+      { tm: "14:10", t: "搭乘 AK171 返回高雄", d: "關西機場（KIX）第一航廈 14:10 起飛，預計 16:30 抵達小港國際機場（KHH）國際航廈", tr: "", note: "亞洲航空 AK171，訂位代號 PDINPM；飛行時間約 3 小時 20 分", st: "ok", geo: "関西国際空港, 日本" },
     ],
     mapStops: [
       { name: "木津市場", lat: 34.6571, lng: 135.5004, q: "木津卸売市場, 日本" },
