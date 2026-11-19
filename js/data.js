@@ -36,6 +36,7 @@ const CUISINE_PHOTOS = {
   ramen: "https://images.pexels.com/photos/4223948/pexels-photo-4223948.jpeg?auto=compress&cs=tinysrgb&w=800",
   kaiseki: "https://images.pexels.com/photos/15837551/pexels-photo-15837551.jpeg?auto=compress&cs=tinysrgb&w=800",
   hall: "https://images.pexels.com/photos/1366594/pexels-photo-1366594.jpeg?auto=compress&cs=tinysrgb&w=800",
+  french: "https://images.pexels.com/photos/20380436/pexels-photo-20380436.jpeg?auto=compress&cs=tinysrgb&w=800",
 };
 
 const FOOD_LODGING = [
@@ -52,4 +53,5 @@ const FOOD_LODGING = [
   { id: "f15", name: "浪速割烹 昇", region: "kansai", type: "美食", cost: 15000, desc: "🍱 日本料理割烹，近梅田站，12/7 梅田晚餐候選，建議先訂位。", map: "https://www.google.com/maps/search/?api=1&query=%E6%B5%AA%E9%80%9F%E5%89%B2%E7%83%B9%20%E6%98%87%20%E5%A4%A7%E9%98%AA", photo: CUISINE_PHOTOS.kaiseki },
   { id: "f18", name: "串カツ いっとく 新世界", region: "kansai", type: "美食", cost: 2000, desc: "🍢 在地人推薦，平價串炸，一支 90 日圓起，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%20%E3%81%84%E3%81%A3%E3%81%A8%E3%81%8F%20%E6%96%B0%E4%B8%96%E7%95%8C", photo: CUISINE_PHOTOS.skewers },
   { id: "f20", name: "無鐵砲 大阪店", region: "kansai", type: "美食", cost: 1200, desc: "🍜 豚骨拉麵，Google 評分 3.9，12/9 新世界晚餐候選。", map: "https://maps.app.goo.gl/3SvXo5mePt3mHdZP8", photo: CUISINE_PHOTOS.ramen },
+  { id: "f23", name: "赤白 小酒館", region: "kansai", type: "美食", cost: 3999, desc: "🥐 KITTE大阪4F 法式料理／葡萄酒酒吧，Tabelog 3.49（1282 則評論），與JR大阪站直通，12/7 梅田晚餐候選。", map: "https://tabelog.com/tw/osaka/A2701/A270101/27143614/", photo: CUISINE_PHOTOS.french },
 ];

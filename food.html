@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="css/style.css?v=20261119-26" />
+<link rel="stylesheet" href="css/style.css?v=20261119-27" />
 </head>
 <body data-page="food">
 
@@ -70,8 +70,8 @@
   </div>
 </footer>
 
-<script src="js/data.js?v=20261119-26"></script>
-<script src="js/main.js?v=20261119-26"></script>
+<script src="js/data.js?v=20261119-27"></script>
+<script src="js/main.js?v=20261119-27"></script>
 <script>
   const grid = document.querySelector("#fl-grid");
   const emptyState = document.querySelector("#empty-state");
@@ -134,8 +134,16 @@
           ${item.photo ? `<p class="card-photo-note">圖為料理類型示意照，非店家實際照片</p>` : ""}
           <p class="card-desc">${item.desc}</p>
           <div class="card-links">
-            ${item.map ? `<a class="card-link" href="${item.map}" target="_blank" rel="noopener">在 Google 地圖查看</a>` : ""}
-            <a class="card-link" href="https://www.google.com/search?q=${encodeURIComponent("site:tabelog.com " + item.name)}" target="_blank" rel="noopener">在 Tabelog 查詢</a>
+            ${
+              item.map
+                ? `<a class="card-link" href="${item.map}" target="_blank" rel="noopener">${item.map.includes("tabelog.com") ? "在 Tabelog 查看" : "在 Google 地圖查看"}</a>`
+                : ""
+            }
+            ${
+              item.map && item.map.includes("tabelog.com")
+                ? ""
+                : `<a class="card-link" href="https://www.google.com/search?q=${encodeURIComponent("site:tabelog.com " + item.name)}" target="_blank" rel="noopener">在 Tabelog 查詢</a>`
+            }
           </div>
           <div class="card-foot">
             <span class="card-cost">約 ¥${item.cost.toLocaleString()}</span>
