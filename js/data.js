@@ -45,6 +45,4 @@ const FOOD_LODGING = [
   { id: "f18", name: "串カツ いっとく 新世界", region: "kansai", type: "美食", cost: 2000, desc: "🍢 在地人推薦，平價串炸，一支 90 日圓起，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%20%E3%81%84%E3%81%A3%E3%81%A8%E3%81%8F%20%E6%96%B0%E4%B8%96%E7%95%8C" },
   { id: "f19", name: "串かつ 横綱 通天閣店", region: "kansai", type: "美食", cost: 2500, desc: "🍢 近通天閣，宴會場大，適合聚餐，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%81%8B%E3%81%A4%20%E6%A8%AA%E7%B6%B1%20%E9%80%9A%E5%A4%A9%E9%96%A3%E5%BA%97" },
   { id: "f20", name: "無鐵砲 大阪店", region: "kansai", type: "美食", cost: 1200, desc: "🍜 豚骨拉麵，Google 評分 3.9，12/9 新世界晚餐候選。", map: "https://maps.app.goo.gl/3SvXo5mePt3mHdZP8" },
-  { id: "f21", name: "金龍拉麵 難波店", region: "kansai", type: "美食", cost: 900, desc: "🍜 老字號豚骨拉麵，宵夜也方便，12/10 難波晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%BE%8D%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E9%9B%A3%E6%B3%A2%E5%BA%97" },
-  { id: "f22", name: "一蘭拉麵 道頓堀店", region: "kansai", type: "美食", cost: 1200, desc: "🍜 24 小時營業，回程時間彈性也不怕，12/10 難波晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E8%98%AD%20%E9%81%93%E9%A0%93%E5%A0%80%E5%BA%97" },
 ];

@@ -190,7 +190,7 @@ const TRIP_DAYS = [
       { tm: "14:30–16:00", t: "祇園散策", d: "花見小路、巽橋，傳統茶屋建築街區", tr: "步行", note: "留意拍照禮儀，私有巷弄不可進入", st: "info", geo: "祇園 花見小路, 日本" },
       { tm: "16:00–17:00", t: "鴨川畔散步", d: "四條大橋周邊河岸，傍晚景色", tr: "步行", note: "從祇園走到鴨川約 10 分", st: "info", geo: "四条大橋, 日本" },
       { tm: "17:00–18:30", t: "返回大阪", d: "京阪／JR 轉乘，不在京都吃晚餐，回大阪再用餐", tr: "電車", note: "避免過晚回飯店", st: "info", geo: "京都駅, 日本" },
-      { tm: "18:30–20:00", t: "難波晚餐", d: "晚餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%BE%8D%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E9%9B%A3%E6%B3%A2%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍜 金龍拉麵 難波店（老字號豚骨拉麵，宵夜也方便）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E8%98%AD%20%E9%81%93%E9%A0%93%E5%A0%80%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍜 一蘭拉麵 道頓堀店（24 小時營業，回程時間彈性也不怕）</a>、<a href=\"https://maps.app.goo.gl/ebhKwpfgNvwtneaKA\" target=\"_blank\" rel=\"noopener\">🍢 BATTEN YOKATO AMERIKAMURA（美國村博多串燒）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%BB%91%E8%88%B9%20DOTONBORI%20KUROFUNE\" target=\"_blank\" rel=\"noopener\">🍣 黑船 DOTONBORI KUROFUNE（道頓堀迴轉壽司，現切生魚片秀）</a>", tr: "步行／地鐵", note: "回大阪後再用餐，餐廳待挑選", st: "warn", geo: "難波, 日本" },
+      { tm: "18:30–20:00", t: "難波晚餐", d: "晚餐候選：<a href=\"https://maps.app.goo.gl/ebhKwpfgNvwtneaKA\" target=\"_blank\" rel=\"noopener\">🍢 BATTEN YOKATO AMERIKAMURA（美國村博多串燒）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%BB%91%E8%88%B9%20DOTONBORI%20KUROFUNE\" target=\"_blank\" rel=\"noopener\">🍣 黑船 DOTONBORI KUROFUNE（道頓堀迴轉壽司，現切生魚片秀）</a>", tr: "步行／地鐵", note: "回大阪後再用餐，餐廳待挑選", st: "warn", geo: "難波, 日本" },
     ],
     mapStops: [
       { name: "京都站", lat: 34.9858, lng: 135.7588, q: "京都駅, 日本" },
