@@ -968,6 +968,28 @@ ul {
   color: inherit;
 }
 
+.tl-photo {
+  margin: 6px 0;
+}
+
+.tl-photo img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.tl-photo figcaption {
+  font-size: 0.72rem;
+  color: var(--color-text-light);
+  margin-top: 4px;
+}
+
+.tl-photo figcaption a {
+  color: inherit;
+}
+
 .timeline {
   position: relative;
   padding-left: 26px;

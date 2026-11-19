@@ -124,6 +124,14 @@ function renderDay() {
     item.innerHTML = `
       <div class="tl-time">${row.tm}</div>
       <div class="tl-title">${row.t}${geoLinkHTML(row.geo, row.t)}</div>
+      ${
+        row.photo
+          ? `<figure class="tl-photo">
+               <img src="${row.photo}" alt="${row.photoAlt || row.t}" loading="lazy" />
+               ${row.photoCredit ? `<figcaption>${row.photoCredit}</figcaption>` : ""}
+             </figure>`
+          : ""
+      }
       <div class="tl-desc">${row.d}</div>
       <div class="tl-meta">
         <span class="tl-mode">${row.tr}</span>
