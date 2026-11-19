@@ -43,7 +43,7 @@ const TRIP_DAYS = [
       { tm: "10:00–13:00", t: "箕面瀑布健行", d: "森林溪流步道往返，約 2–3 小時", tr: "步行", note: "出發前查步道開放及天氣", st: "info", geo: "箕面大滝, 日本" },
       { tm: "13:00–14:30", t: "午餐・返回市區", d: "箕面或梅田用餐", tr: "電車", note: "安排休息", st: "info", geo: "梅田, 日本" },
       { tm: "14:30–16:30", t: "梅田・中之島散策", d: "梅田スカイビル展望台／中之島公園・美術館周邊散步，視體力彈性安排", tr: "步行／電車", note: "箕面瀑布返回後安排這段；大阪城 Illuminage 已移除，不需趕路", st: "info", geo: "中之島公園, 日本" },
-      { tm: "17:00–18:30", t: "梅田晚餐", d: "晚餐地點待選，可選梅田周邊", tr: "步行", note: "原堺筋晚餐／Illuminage 行程已取消", st: "warn", geo: "梅田, 日本" },
+      { tm: "17:00–18:30", t: "梅田晚餐", d: "晚餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Osaka\" target=\"_blank\" rel=\"noopener\">Time Out Market Osaka（Grand Green Osaka 南館，多間廚房任選，和牛／披薩／壽司／拉麵）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E6%B5%AA%E9%80%9F%E5%89%B2%E7%83%B9%20%E6%98%87%20%E5%A4%A7%E9%98%AA\" target=\"_blank\" rel=\"noopener\">浪速割烹 昇（日本料理割烹，近梅田站，建議先訂位）</a>", tr: "步行", note: "原堺筋晚餐／Illuminage 行程已取消；餐廳待挑選", st: "warn", geo: "梅田, 日本" },
       { tm: "19:00", t: "返回飯店・休息", d: "簡單休息，為明日奈良行程保留體力", tr: "電車／地鐵", note: "", st: "info", geo: HOTEL_ADDR },
     ],
     mapStops: [
@@ -72,7 +72,7 @@ const TRIP_DAYS = [
       { tm: "16:40–17:10", t: "水世界", d: "特技、爆破與煙火的現場演出，約 20 分鐘", tr: "步行", note: "開演前 20–30 分鐘入場卡位較佳，實際場次以當日時刻表為準", st: "warn" },
       { tm: "17:10–18:00", t: "好萊塢區域・環球妖魔鬼怪搖滾樂表演秀", d: "好萊塢區逛街，觀賞經典怪物角色搖滾歌舞秀", tr: "步行", note: "實際場次以當日時刻表為準", st: "warn" },
       { tm: "18:00–19:30", t: "自由活動・聖誕燈光", d: "園區聖誕裝飾與燈光，傍晚後氣氛最佳", tr: "步行", note: "可依當日表演時刻表彈性調整", st: "info" },
-      { tm: "晚上", t: "返回飯店・休息", d: "簡單晚餐", tr: "JR", note: "不再安排其他景點", st: "info", geo: HOTEL_ADDR },
+      { tm: "晚上", t: "日本橋晚餐・返回飯店", d: "晚餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E7%85%AE%E5%B9%B2%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%20%E7%8E%89%E4%BA%94%E9%83%8E%20%E9%BB%92%E9%96%80%E5%BA%97\" target=\"_blank\" rel=\"noopener\">煮干拉麵 玉五郎 黑門店（厚切豚丼＋拉麵套餐，營業至凌晨 03:00）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E7%8E%84%E5%93%81%E3%81%B5%E3%81%90%20%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4\" target=\"_blank\" rel=\"noopener\">玄品河豚 黑門市場店（河豚專門店）</a>", tr: "JR／步行", note: "USJ 回程較晚，玉五郎營業到凌晨較彈性；河豚建議先確認是否需訂位", st: "warn" },
     ],
     mapStops: [
       { name: "Universal City 駅", lat: 34.6658, lng: 135.4330, q: "ユニバーサルシティ駅, 日本" },
@@ -167,7 +167,7 @@ const TRIP_DAYS = [
       { tm: "10:00–12:30", t: "奈良公園・東大寺", d: "鹿群、古蹟與公園步道", tr: "電車", note: "留意鹿群與餵食規範", st: "info", geo: "東大寺, 日本" },
       { tm: "12:30–14:00", t: "奈良午餐", d: "柿葉壽司／日式定食", tr: "步行", note: "自由選擇", st: "info", geo: "奈良町, 日本" },
       { tm: "14:00–16:00", t: "奈良町散步", d: "老街、咖啡廳", tr: "步行", note: "不趕行程", st: "info", geo: "奈良町, 日本" },
-      { tm: "17:00–18:30", t: "通天閣・新世界", d: "返回大阪後逛街、新世界散步晚餐", tr: "近鐵／地鐵", note: "累的話可直接回飯店", st: "info", geo: "通天閣, 日本" },
+      { tm: "17:00–18:30", t: "通天閣・新世界晚餐", d: "新世界串カツ晚餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%20%E3%81%84%E3%81%A3%E3%81%A8%E3%81%8F%20%E6%96%B0%E4%B8%96%E7%95%8C\" target=\"_blank\" rel=\"noopener\">串カツ いっとく 新世界（在地人推薦，平價串炸，一支 90 日圓起）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%81%8B%E3%81%A4%20%E6%A8%AA%E7%B6%B1%20%E9%80%9A%E5%A4%A9%E9%96%A3%E5%BA%97\" target=\"_blank\" rel=\"noopener\">串かつ 横綱 通天閣店（近通天閣，宴會場大，適合聚餐）</a>", tr: "近鐵／地鐵", note: "累的話可直接回飯店；餐廳待挑選", st: "warn", geo: "通天閣, 日本" },
       { tm: "19:00–20:00", t: "天王寺 Tenshiba 聖誕市集", d: "免費入場的聖誕市集，逛完直接返回飯店休息", tr: "步行", note: "免費景點，順路就去看看", st: "info", geo: "てんしば, 日本" },
     ],
     mapStops: [
@@ -190,7 +190,7 @@ const TRIP_DAYS = [
       { tm: "14:30–16:00", t: "祇園散策", d: "花見小路、巽橋，傳統茶屋建築街區", tr: "步行", note: "留意拍照禮儀，私有巷弄不可進入", st: "info", geo: "祇園 花見小路, 日本" },
       { tm: "16:00–17:00", t: "鴨川畔散步", d: "四條大橋周邊河岸，傍晚景色", tr: "步行", note: "從祇園走到鴨川約 10 分", st: "info", geo: "四条大橋, 日本" },
       { tm: "17:00–18:30", t: "返回大阪", d: "京阪／JR 轉乘，不在京都吃晚餐，回大阪再用餐", tr: "電車", note: "避免過晚回飯店", st: "info", geo: "京都駅, 日本" },
-      { tm: "18:30–20:00", t: "大阪晚餐", d: "回大阪後再用餐，地點待選", tr: "步行／地鐵", note: "餐廳待挑選", st: "warn" },
+      { tm: "18:30–20:00", t: "難波晚餐", d: "晚餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%BE%8D%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E9%9B%A3%E6%B3%A2%E5%BA%97\" target=\"_blank\" rel=\"noopener\">金龍拉麵 難波店（老字號豚骨拉麵，宵夜也方便）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E4%B8%80%E8%98%AD%20%E9%81%93%E9%A0%93%E5%A0%80%E5%BA%97\" target=\"_blank\" rel=\"noopener\">一蘭拉麵 道頓堀店（24 小時營業，回程時間彈性也不怕）</a>", tr: "步行／地鐵", note: "回大阪後再用餐，餐廳待挑選", st: "warn", geo: "難波, 日本" },
     ],
     mapStops: [
       { name: "京都站", lat: 34.9858, lng: 135.7588, q: "京都駅, 日本" },
