@@ -8,12 +8,79 @@ function badgeHTML(st, labelOverride) {
   return `<span class="badge badge-${st}">${text}</span>`;
 }
 
+function directionsURL(query) {
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(query)}&travelmode=transit`;
+}
+
+function geoLinkHTML(geo, label) {
+  if (!geo) return "";
+  return `<a class="geo-link" href="${directionsURL(geo)}" target="_blank" rel="noopener" title="在 Google Maps 查看如何前往${label ? "「" + label + "」" : "這裡"}" aria-label="在 Google Maps 查看如何前往${label ? "「" + label + "」" : "這裡"}">📍</a>`;
+}
+
 function renderHeader() {
   document.querySelector("#trip-title").textContent = TRIP_INFO.title;
   document.querySelector("#trip-sub").textContent = `${TRIP_INFO.range}・${TRIP_INFO.pax}`;
 }
 
 let currentDay = 0;
+let dayMapInstance = null;
+let dayMapLayer = null;
+
+function renderDayMap(day) {
+  const mapEl = document.querySelector("#day-map");
+  const wrapEl = document.querySelector("#day-map-wrap");
+  const linkEl = document.querySelector("#day-map-link");
+  if (!mapEl || !wrapEl) return;
+
+  const stops = day.mapStops || [];
+  if (!stops.length || typeof L === "undefined") {
+    wrapEl.style.display = "none";
+    return;
+  }
+  wrapEl.style.display = "";
+
+  if (!dayMapInstance) {
+    dayMapInstance = L.map(mapEl, { scrollWheelZoom: false });
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',
+      maxZoom: 19,
+    }).addTo(dayMapInstance);
+    dayMapLayer = L.layerGroup().addTo(dayMapInstance);
+  } else {
+    dayMapLayer.clearLayers();
+  }
+
+  const latlngs = stops.map((s) => [s.lat, s.lng]);
+
+  stops.forEach((s, i) => {
+    const icon = L.divIcon({
+      className: "day-map-pin",
+      html: `<span>${i + 1}</span>`,
+      iconSize: [26, 26],
+      iconAnchor: [13, 13],
+    });
+    L.marker([s.lat, s.lng], { icon })
+      .addTo(dayMapLayer)
+      .bindPopup(`<b>${i + 1}. ${s.name}</b>`);
+  });
+
+  L.polyline(latlngs, { color: "#c0392b", weight: 3, dashArray: "6 6" }).addTo(dayMapLayer);
+
+  setTimeout(() => {
+    dayMapInstance.invalidateSize();
+    dayMapInstance.fitBounds(latlngs, { padding: [30, 30] });
+  }, 0);
+
+  if (linkEl) {
+    const coords = stops.map((s) => `${s.lat},${s.lng}`);
+    const origin = coords[0];
+    const destination = coords[coords.length - 1];
+    const waypoints = coords.slice(1, -1).join("|");
+    let url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&travelmode=transit`;
+    if (waypoints) url += `&waypoints=${waypoints}`;
+    linkEl.href = url;
+  }
+}
 
 function renderDayChips() {
   const wrap = document.querySelector("#day-chips");
@@ -54,7 +121,7 @@ function renderDay() {
     item.className = "tl-item";
     item.innerHTML = `
       <div class="tl-time">${row.tm}</div>
-      <div class="tl-title">${row.t}</div>
+      <div class="tl-title">${row.t}${geoLinkHTML(row.geo, row.t)}</div>
       <div class="tl-desc">${row.d}</div>
       <div class="tl-meta">
         <span class="tl-mode">${row.tr}</span>
@@ -64,6 +131,8 @@ function renderDay() {
     `;
     timeline.appendChild(item);
   });
+
+  renderDayMap(day);
 
   const tipsWrap = document.querySelector("#day-tips");
   tipsWrap.innerHTML = "";
@@ -161,6 +230,9 @@ function setupTabs() {
     document.querySelectorAll(".trip-panel").forEach((p) => {
       p.classList.toggle("active", p.id === "panel-" + btn.dataset.tab);
     });
+    if (btn.dataset.tab === "plan" && dayMapInstance) {
+      setTimeout(() => dayMapInstance.invalidateSize(), 0);
+    }
   });
 }
 

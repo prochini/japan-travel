@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<link rel="stylesheet" href="css/style.css?v=20261119-2" />
 </head>
 <body data-page="home">
 
@@ -50,6 +51,12 @@
   <section class="trip-panel active" id="panel-plan">
     <div class="day-chips" id="day-chips"></div>
     <div class="day-title-block" id="day-title-block"></div>
+    <div class="day-map-wrap" id="day-map-wrap">
+      <div id="day-map" class="day-map"></div>
+      <div class="day-map-actions">
+        <a id="day-map-link" class="btn btn-outline btn-small" href="#" target="_blank" rel="noopener">在 Google Maps 開啟今日路線</a>
+      </div>
+    </div>
     <div class="timeline" id="day-timeline"></div>
     <div id="day-tips"></div>
 
@@ -117,8 +124,9 @@
   </div>
 </footer>
 
-<script src="js/trip-data.js"></script>
-<script src="js/main.js"></script>
-<script src="js/trip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/trip-data.js?v=20261119-2"></script>
+<script src="js/main.js?v=20261119-2"></script>
+<script src="js/trip.js?v=20261119-2"></script>
 </body>
 </html>
