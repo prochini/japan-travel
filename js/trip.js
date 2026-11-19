@@ -231,6 +231,12 @@ function renderPacking() {
   });
 }
 
+function syncTripTabsHeight() {
+  const tabs = document.querySelector("#trip-tabs");
+  if (!tabs) return;
+  document.documentElement.style.setProperty("--trip-tabs-height", tabs.offsetHeight + "px");
+}
+
 function setupTabs() {
   const tabs = document.querySelector("#trip-tabs");
   tabs.addEventListener("click", (e) => {
@@ -255,6 +261,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderNotes();
   renderPacking();
   setupTabs();
+  syncTripTabsHeight();
+  window.addEventListener("resize", syncTripTabsHeight);
 
   document.querySelector("#day-chips").addEventListener("click", (e) => {
     const chip = e.target.closest(".day-chip");
