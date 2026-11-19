@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="css/style.css?v=20261119-21" />
+<link rel="stylesheet" href="css/style.css?v=20261119-22" />
 </head>
 <body data-page="food">
 
@@ -70,8 +70,8 @@
   </div>
 </footer>
 
-<script src="js/data.js?v=20261119-21"></script>
-<script src="js/main.js?v=20261119-21"></script>
+<script src="js/data.js?v=20261119-22"></script>
+<script src="js/main.js?v=20261119-22"></script>
 <script>
   const grid = document.querySelector("#fl-grid");
   const emptyState = document.querySelector("#empty-state");
@@ -123,10 +123,15 @@
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `
-        <div class="placeholder-img" data-label="${item.name}" style="height:160px"></div>
+        ${
+          item.photo
+            ? `<img class="card-photo" src="${item.photo}" alt="${item.name}" loading="lazy" />`
+            : `<div class="placeholder-img" data-label="${item.name}" style="height:160px"></div>`
+        }
         <div class="card-body">
           <h3>${item.name}</h3>
           <div class="card-meta"><span class="tag">${REGIONS[item.region].name}</span><span class="tag">${item.type}</span></div>
+          ${item.photo ? `<p class="card-photo-note">圖為料理類型示意照，非店家實際照片</p>` : ""}
           <p class="card-desc">${item.desc}</p>
           <div class="card-links">
             ${item.map ? `<a class="card-link" href="${item.map}" target="_blank" rel="noopener">在 Google 地圖查看</a>` : ""}

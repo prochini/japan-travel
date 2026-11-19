@@ -28,19 +28,29 @@ const ATTRACTIONS = [
   { id: "a12", name: "美麗海水族館", region: "okinawa", category: "自然", cost: 1880, desc: "沖繩人氣水族館，巨大水槽鯨鯊近距離欣賞。" },
 ];
 
+// 免費授權通用美食示意照（Pexels，依料理類型分類，非店家實際照片）
+const CUISINE_PHOTOS = {
+  sushi: "https://images.pexels.com/photos/31393431/pexels-photo-31393431.jpeg?auto=compress&cs=tinysrgb&w=800",
+  grilled: "https://images.pexels.com/photos/18936008/pexels-photo-18936008.jpeg?auto=compress&cs=tinysrgb&w=800",
+  skewers: "https://images.pexels.com/photos/31249644/pexels-photo-31249644.jpeg?auto=compress&cs=tinysrgb&w=800",
+  ramen: "https://images.pexels.com/photos/4223948/pexels-photo-4223948.jpeg?auto=compress&cs=tinysrgb&w=800",
+  kaiseki: "https://images.pexels.com/photos/15837551/pexels-photo-15837551.jpeg?auto=compress&cs=tinysrgb&w=800",
+  hall: "https://images.pexels.com/photos/1366594/pexels-photo-1366594.jpeg?auto=compress&cs=tinysrgb&w=800",
+};
+
 const FOOD_LODGING = [
   { id: "f3", name: "錨屋商務旅館", region: "kanto", type: "住宿", cost: 3200, desc: "鄰近車站的平價商務旅館。（範例文字）" },
   { id: "f4", name: "京町家民宿", region: "kansai", type: "住宿", cost: 4200, desc: "改建自傳統町家的和風民宿。（範例文字）" },
   { id: "f7", name: "運河畔溫泉旅館", region: "hokkaido", type: "住宿", cost: 6800, desc: "可一邊泡湯一邊欣賞運河夜景。（範例文字）" },
   { id: "f8", name: "海景度假飯店", region: "okinawa", type: "住宿", cost: 5200, desc: "步行可達海灘的度假型飯店。（範例文字）" },
-  { id: "f9", name: "すし酒場さしす なんばウォーク店", region: "kansai", type: "美食", cost: 3000, desc: "🍣 立食壽司酒場，12/6 心齋橋晚餐候選。", map: "https://maps.app.goo.gl/k4CQa3JcPUibjGK98" },
-  { id: "f10", name: "Gyutan Charcoal Grilled YOSHIJI（心齋橋店）", region: "kansai", type: "美食", cost: 4500, desc: "🥩 炭火烤牛舌專門店，12/8 日本橋晚餐候選。", map: "https://maps.app.goo.gl/hCta7roMFWSjHHsP8" },
-  { id: "f11", name: "炭火燒肉 大歡（東心齋橋）", region: "kansai", type: "美食", cost: 7800, desc: "🥩 國產黑毛和牛喝到飽套餐，約 6,800–8,800 日圓／人，12/8 日本橋晚餐候選。", map: "https://tabelog.com/tw/osaka/A2701/A270201/27100447/" },
-  { id: "f12", name: "BATTEN YOKATO AMERIKAMURA（博多串焼き）", region: "kansai", type: "美食", cost: 3000, desc: "🍢 美國村居酒屋，博多串燒，12/10 難波晚餐候選。", map: "https://maps.app.goo.gl/ebhKwpfgNvwtneaKA" },
-  { id: "f13", name: "黑船 DOTONBORI KUROFUNE", region: "kansai", type: "美食", cost: 3500, desc: "🍣 道頓堀迴轉壽司，現切生魚片秀，12/10 難波晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E9%BB%91%E8%88%B9%20DOTONBORI%20KUROFUNE" },
-  { id: "f14", name: "Time Out Market Osaka", region: "kansai", type: "美食", cost: 2500, desc: "🍽️ Grand Green Osaka 南館，多間廚房任選，和牛／披薩／壽司／拉麵，12/7 梅田晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Osaka" },
-  { id: "f15", name: "浪速割烹 昇", region: "kansai", type: "美食", cost: 15000, desc: "🍱 日本料理割烹，近梅田站，12/7 梅田晚餐候選，建議先訂位。", map: "https://www.google.com/maps/search/?api=1&query=%E6%B5%AA%E9%80%9F%E5%89%B2%E7%83%B9%20%E6%98%87%20%E5%A4%A7%E9%98%AA" },
-  { id: "f18", name: "串カツ いっとく 新世界", region: "kansai", type: "美食", cost: 2000, desc: "🍢 在地人推薦，平價串炸，一支 90 日圓起，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%20%E3%81%84%E3%81%A3%E3%81%A8%E3%81%8F%20%E6%96%B0%E4%B8%96%E7%95%8C" },
-  { id: "f19", name: "串かつ 横綱 通天閣店", region: "kansai", type: "美食", cost: 2500, desc: "🍢 近通天閣，宴會場大，適合聚餐，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%81%8B%E3%81%A4%20%E6%A8%AA%E7%B6%B1%20%E9%80%9A%E5%A4%A9%E9%96%A3%E5%BA%97" },
-  { id: "f20", name: "無鐵砲 大阪店", region: "kansai", type: "美食", cost: 1200, desc: "🍜 豚骨拉麵，Google 評分 3.9，12/9 新世界晚餐候選。", map: "https://maps.app.goo.gl/3SvXo5mePt3mHdZP8" },
+  { id: "f9", name: "すし酒場さしす なんばウォーク店", region: "kansai", type: "美食", cost: 3000, desc: "🍣 立食壽司酒場，12/6 心齋橋晚餐候選。", map: "https://maps.app.goo.gl/k4CQa3JcPUibjGK98", photo: CUISINE_PHOTOS.sushi },
+  { id: "f10", name: "Gyutan Charcoal Grilled YOSHIJI（心齋橋店）", region: "kansai", type: "美食", cost: 4500, desc: "🥩 炭火烤牛舌專門店，12/8 日本橋晚餐候選。", map: "https://maps.app.goo.gl/hCta7roMFWSjHHsP8", photo: CUISINE_PHOTOS.grilled },
+  { id: "f11", name: "炭火燒肉 大歡（東心齋橋）", region: "kansai", type: "美食", cost: 7800, desc: "🥩 國產黑毛和牛喝到飽套餐，約 6,800–8,800 日圓／人，12/8 日本橋晚餐候選。", map: "https://tabelog.com/tw/osaka/A2701/A270201/27100447/", photo: CUISINE_PHOTOS.grilled },
+  { id: "f12", name: "BATTEN YOKATO AMERIKAMURA（博多串焼き）", region: "kansai", type: "美食", cost: 3000, desc: "🍢 美國村居酒屋，博多串燒，12/10 難波晚餐候選。", map: "https://maps.app.goo.gl/ebhKwpfgNvwtneaKA", photo: CUISINE_PHOTOS.skewers },
+  { id: "f13", name: "黑船 DOTONBORI KUROFUNE", region: "kansai", type: "美食", cost: 3500, desc: "🍣 道頓堀迴轉壽司，現切生魚片秀，12/10 難波晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E9%BB%91%E8%88%B9%20DOTONBORI%20KUROFUNE", photo: CUISINE_PHOTOS.sushi },
+  { id: "f14", name: "Time Out Market Osaka", region: "kansai", type: "美食", cost: 2500, desc: "🍽️ Grand Green Osaka 南館，多間廚房任選，和牛／披薩／壽司／拉麵，12/7 梅田晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Osaka", photo: CUISINE_PHOTOS.hall },
+  { id: "f15", name: "浪速割烹 昇", region: "kansai", type: "美食", cost: 15000, desc: "🍱 日本料理割烹，近梅田站，12/7 梅田晚餐候選，建議先訂位。", map: "https://www.google.com/maps/search/?api=1&query=%E6%B5%AA%E9%80%9F%E5%89%B2%E7%83%B9%20%E6%98%87%20%E5%A4%A7%E9%98%AA", photo: CUISINE_PHOTOS.kaiseki },
+  { id: "f18", name: "串カツ いっとく 新世界", region: "kansai", type: "美食", cost: 2000, desc: "🍢 在地人推薦，平價串炸，一支 90 日圓起，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%20%E3%81%84%E3%81%A3%E3%81%A8%E3%81%8F%20%E6%96%B0%E4%B8%96%E7%95%8C", photo: CUISINE_PHOTOS.skewers },
+  { id: "f19", name: "串かつ 横綱 通天閣店", region: "kansai", type: "美食", cost: 2500, desc: "🍢 近通天閣，宴會場大，適合聚餐，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%81%8B%E3%81%A4%20%E6%A8%AA%E7%B6%B1%20%E9%80%9A%E5%A4%A9%E9%96%A3%E5%BA%97", photo: CUISINE_PHOTOS.skewers },
+  { id: "f20", name: "無鐵砲 大阪店", region: "kansai", type: "美食", cost: 1200, desc: "🍜 豚骨拉麵，Google 評分 3.9，12/9 新世界晚餐候選。", map: "https://maps.app.goo.gl/3SvXo5mePt3mHdZP8", photo: CUISINE_PHOTOS.ramen },
 ];
