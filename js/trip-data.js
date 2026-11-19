@@ -247,7 +247,7 @@ const TRIP_ROUTES = [
 const TRIP_BUDGET = [
   { item: "機票", qty: "2 人", st: "ok", label: "已購" },
   { item: "住宿", qty: "5 晚（Apartment Hotel 11 Kuromon 2）", st: "warn", label: "金額待確認" },
-  { item: "日本環球影城門票", qty: "2 人", st: "warn", label: "待填" },
+  { item: "日本環球影城門票", qty: "2 人／12/8 一日券", st: "ok", label: "已購（KKday，NT$3,942）" },
   { item: "日本環球影城快速通關", qty: "2 人／可選", st: "warn", label: "待填" },
   { item: "機場交通", qty: "2 人來回", st: "warn", label: "待填" },
   { item: "市區與跨城交通", qty: "2 人", st: "warn", label: "待填" },
