@@ -48,7 +48,8 @@ const TRIP_DAYS = [
       { tm: "14:30–15:30", t: "梅田スカイビル展望台", d: "視體力彈性安排，可省略", tr: "步行／電車", note: "箕面瀑布返回後安排這段；大阪城 Illuminage 已移除，不需趕路", st: "info", geo: "梅田スカイビル, 日本", photo: "images/spots/umeda-sky.jpg", photoAlt: "梅田スカイビル", photoCredit: "圖片：FlyingToaster（CC BY 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Base_of_the_Umeda_Sky_Building.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "15:30–16:30", t: "大阪中之島美術館", d: "<a href=\"https://nakka-art.jp/tc/\" target=\"_blank\" rel=\"noopener\">🖼️ 大阪中之島美術館</a>，可留意「NHK日曜美術館50年展」（10/10–12/20）、「大英博物館日本美術收藏展」（10/31–隔年1/31）等展期與行程重疊的特展", tr: "步行／電車", note: "出發前至官網確認當期展覽與休館日，建議預先買票", st: "info", geo: "大阪中之島美術館, 日本" },
       { tm: "17:00–18:30", t: "梅田晚餐", d: "<a href=\"https://tabelog.com/tw/osaka/A2701/A270101/27143614/\" target=\"_blank\" rel=\"noopener\">🥐 赤白 小酒館（KITTE大阪4F 法式料理，Tabelog 3.49，與JR大阪站直通）</a>", tr: "步行", note: "原堺筋晚餐／Illuminage 行程已取消；已確定餐廳，尚未訂位", st: "ok", geo: "梅田, 日本" },
-      { tm: "19:00", t: "返回飯店・休息", d: "簡單休息，為明日奈良行程保留體力", tr: "電車／地鐵", note: "", st: "info", geo: HOTEL_ADDR },
+      { tm: "19:30–20:00", t: "超市採購", d: "<a href=\"https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E7%8E%89%E5%87%BA%20%E5%91%A8%E9%98%B2%E7%94%BA%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🛒 スーパー玉出 周防町店（24小時營業）</a>，住宿附近採買零食、飲料、水果等", tr: "步行，約 8–10 分", note: "離黑門2号店約600–800m，回飯店路上順便逛；也可改去近日本橋駅徒歩3分的「肉のハナマサ 日本橋店」買便宜零食酒類", st: "info", geo: "スーパー玉出 周防町店, 日本" },
+      { tm: "20:00", t: "返回飯店・休息", d: "簡單休息，為明日奈良行程保留體力", tr: "步行", note: "", st: "info", geo: HOTEL_ADDR },
     ],
     mapStops: [
       { name: "箕面站", lat: 34.8322, lng: 135.4697, q: "箕面駅, 日本" },
@@ -56,6 +57,7 @@ const TRIP_DAYS = [
       { name: "梅田スカイビル", lat: 34.7055, lng: 135.4906, q: "梅田スカイビル, 日本" },
       { name: "大阪中之島美術館", lat: 34.6943, lng: 135.4918, q: "大阪中之島美術館, 日本" },
       { name: "中之島公園", lat: 34.6937, lng: 135.4998, q: "中之島公園, 日本" },
+      { name: "スーパー玉出 周防町店", lat: 34.6734, lng: 135.5036, q: "スーパー玉出 周防町店, 日本" },
       { name: "住宿（日本橋）", lat: 34.6627, lng: 135.5064, q: HOTEL_ADDR },
     ],
   },
