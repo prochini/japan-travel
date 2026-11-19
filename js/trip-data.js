@@ -72,7 +72,7 @@ const TRIP_DAYS = [
       { tm: "16:40–17:10", t: "水世界", d: "特技、爆破與煙火的現場演出，約 20 分鐘", tr: "步行", note: "開演前 20–30 分鐘入場卡位較佳，實際場次以當日時刻表為準", st: "warn" },
       { tm: "17:10–18:00", t: "好萊塢區域・環球妖魔鬼怪搖滾樂表演秀", d: "好萊塢區逛街，觀賞經典怪物角色搖滾歌舞秀", tr: "步行", note: "實際場次以當日時刻表為準", st: "warn" },
       { tm: "18:00–19:30", t: "自由活動・聖誕燈光", d: "園區聖誕裝飾與燈光，傍晚後氣氛最佳", tr: "步行", note: "可依當日表演時刻表彈性調整", st: "info" },
-      { tm: "晚上", t: "日本橋晚餐・返回飯店", d: "晚餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E7%85%AE%E5%B9%B2%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%20%E7%8E%89%E4%BA%94%E9%83%8E%20%E9%BB%92%E9%96%80%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍜 煮干拉麵 玉五郎 黑門店（厚切豚丼＋拉麵套餐，營業至凌晨 03:00）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E7%8E%84%E5%93%81%E3%81%B5%E3%81%90%20%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4\" target=\"_blank\" rel=\"noopener\">🐡 玄品河豚 黑門市場店（河豚專門店）</a>、<a href=\"https://maps.app.goo.gl/hCta7roMFWSjHHsP8\" target=\"_blank\" rel=\"noopener\">🥩 Gyutan Charcoal Grilled YOSHIJI 心齋橋店（炭火烤牛舌，約¥4,500）</a>、<a href=\"https://tabelog.com/tw/osaka/A2701/A270201/27100447/\" target=\"_blank\" rel=\"noopener\">🥩 炭火燒肉 大歡 東心齋橋（和牛喝到飽，約¥7,800）</a>", tr: "JR／步行", note: "USJ 回程較晚，玉五郎營業到凌晨較彈性；心齋橋的兩間步行約 15–20 分，河豚建議先確認是否需訂位", st: "warn" },
+      { tm: "晚上", t: "日本橋晚餐・返回飯店", d: "晚餐候選：<a href=\"https://maps.app.goo.gl/hCta7roMFWSjHHsP8\" target=\"_blank\" rel=\"noopener\">🥩 Gyutan Charcoal Grilled YOSHIJI 心齋橋店（炭火烤牛舌，約¥4,500）</a>、<a href=\"https://tabelog.com/tw/osaka/A2701/A270201/27100447/\" target=\"_blank\" rel=\"noopener\">🥩 炭火燒肉 大歡 東心齋橋（和牛喝到飽，約¥7,800）</a>", tr: "JR／步行", note: "USJ 回程較晚，心齋橋兩間步行約 15–20 分", st: "warn" },
     ],
     mapStops: [
       { name: "Universal City 駅", lat: 34.6658, lng: 135.4330, q: "ユニバーサルシティ駅, 日本" },
