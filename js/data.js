@@ -51,6 +51,5 @@ const FOOD_LODGING = [
   { id: "f14", name: "Time Out Market Osaka", region: "kansai", type: "美食", cost: 2500, desc: "🍽️ Grand Green Osaka 南館，多間廚房任選，和牛／披薩／壽司／拉麵，12/7 梅田晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Osaka", photo: CUISINE_PHOTOS.hall },
   { id: "f15", name: "浪速割烹 昇", region: "kansai", type: "美食", cost: 15000, desc: "🍱 日本料理割烹，近梅田站，12/7 梅田晚餐候選，建議先訂位。", map: "https://www.google.com/maps/search/?api=1&query=%E6%B5%AA%E9%80%9F%E5%89%B2%E7%83%B9%20%E6%98%87%20%E5%A4%A7%E9%98%AA", photo: CUISINE_PHOTOS.kaiseki },
   { id: "f18", name: "串カツ いっとく 新世界", region: "kansai", type: "美食", cost: 2000, desc: "🍢 在地人推薦，平價串炸，一支 90 日圓起，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%20%E3%81%84%E3%81%A3%E3%81%A8%E3%81%8F%20%E6%96%B0%E4%B8%96%E7%95%8C", photo: CUISINE_PHOTOS.skewers },
-  { id: "f19", name: "串かつ 横綱 通天閣店", region: "kansai", type: "美食", cost: 2500, desc: "🍢 近通天閣，宴會場大，適合聚餐，12/9 新世界晚餐候選。", map: "https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%81%8B%E3%81%A4%20%E6%A8%AA%E7%B6%B1%20%E9%80%9A%E5%A4%A9%E9%96%A3%E5%BA%97", photo: CUISINE_PHOTOS.skewers },
   { id: "f20", name: "無鐵砲 大阪店", region: "kansai", type: "美食", cost: 1200, desc: "🍜 豚骨拉麵，Google 評分 3.9，12/9 新世界晚餐候選。", map: "https://maps.app.goo.gl/3SvXo5mePt3mHdZP8", photo: CUISINE_PHOTOS.ramen },
 ];
