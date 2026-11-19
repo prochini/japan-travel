@@ -360,6 +360,12 @@ ul {
   text-decoration: underline;
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .card-foot {
   display: flex;
   align-items: center;
