@@ -263,6 +263,7 @@ const TRIP_BUDGET = [
 ];
 
 const TRIP_PACKING = [
+  "<a href=\"https://www.vjw.digital.go.jp/main/#/vjwplo001\" target=\"_blank\" rel=\"noopener\">Visit Japan Web</a> 線上登錄護照、入境審查與海關申報資料，出發前產生 QR Code（建議提早在家完成，入境時可省去紙本表單）",
   "護照正本（效期 6 個月以上）＋ 影本",
   "機票／訂房確認單（紙本或手機截圖）",
   "日幣現金＋一張可海外提款的卡",
