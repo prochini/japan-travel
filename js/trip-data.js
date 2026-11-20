@@ -18,10 +18,10 @@ const TRIP_DAYS = [
     imgAlt: "道頓堀夜景",
     imgCredit: "圖片：Kang-min Liu（CC BY 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:%E5%8A%9B%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%82%88%E3%81%86%E6%97%A5%E6%9C%AC_2014_%E5%A4%A7%E9%98%AA_(12206068196).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
-      { tm: "13:10", t: "抵達關西機場 T1｜AK170", d: "小港國際機場（KHH）09:00 起飛，關西機場（KIX）第一航廈 13:10 落地", tr: "南海電鐵／JR 至大阪市區", note: "亞洲航空 AK170，訂位代號 PDINPM；飛行時間約 3 小時 10 分，機型空中巴士 A320，經濟艙，無免費託運行李（已加購 20 公斤）", st: "ok", geo: "関西国際空港, 日本" },
+      { tm: "13:10", t: "抵達關西機場 T1｜AK170", d: "小港國際機場（KHH）09:00 起飛，關西機場（KIX）第一航廈 13:10 落地", tr: "南海電鐵／JR 至大阪市區", note: "亞洲航空 AK170，訂位代號 PDINPM；飛行時間約 3 小時 10 分，機型空中巴士 A320，經濟艙，無免費託運行李（已加購 20 公斤）；入境領行李後搭南海空港急行到南海難波約 44 分，出站走到飯店約 10–15 分", st: "ok", geo: "関西国際空港, 日本" },
       { tm: "15:30–16:30（估）", t: "入住", d: "14:30 左右搭車前往大阪，入住 Apartment Hotel 11 Kuromon 2（住一 黑門2号店）", tr: "步行／地鐵", note: "地址：〒542-0073 大阪市中央区日本橋2-1-19", st: "ok", geo: HOTEL_ADDR },
-      { tm: "16:30–18:00", t: "大阪城公園・天守閣", d: "護城河散步、天守閣參觀（視體力決定是否登閣）", tr: "地鐵谷町線，約 15–20 分", note: "由原 12/7 移至此日；12/6 日落約 16:47，天守閣最後入館約 16:00–16:30，到場時天色已暗，恐來不及登閣，建議以護城河外圍夜景散步為主", st: "warn", geo: "大阪城公園, 日本", photo: "images/spots/osaka-castle.jpg", photoAlt: "大阪城天守閣", photoCredit: "圖片：663highland（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Osaka_Castle_02bs3200.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
-      { tm: "18:30–19:30", t: "東心齋橋晚餐", d: "<a href=\"https://tabelog.com/tw/osaka/A2701/A270201/27100447/\" target=\"_blank\" rel=\"noopener\">🥩 炭火燒肉 大歡 東心齋橋（和牛喝到飽，約¥7,800）</a>", tr: "地鐵，約 15–20 分", note: "由大阪城先回市區用餐；已確定餐廳，尚未訂位", st: "ok", geo: "東心斎橋, 日本" },
+      { tm: "16:30–18:00", t: "大阪城公園・天守閣", d: "護城河散步、天守閣參觀（視體力決定是否登閣）", tr: "地鐵谷町線（日本橋→谷町九丁目轉乘→谷町四丁目），約 15–20 分", note: "由原 12/7 移至此日；天守閣官網目前 18:00 閉館、17:30 最後入館，若能 15:30 左右就從飯店出發還有機會登閣，16:30 才離開飯店就視入境與領行李進度彈性決定，趕不上登閣就以護城河外圍夜景散步為主", st: "warn", geo: "大阪城公園, 日本", photo: "images/spots/osaka-castle.jpg", photoAlt: "大阪城天守閣", photoCredit: "圖片：663highland（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Osaka_Castle_02bs3200.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
+      { tm: "18:30–19:30", t: "東心齋橋晚餐", d: "<a href=\"https://tabelog.com/tw/osaka/A2701/A270201/27100447/\" target=\"_blank\" rel=\"noopener\">🥩 炭火燒肉 大歡 東心齋橋（和牛喝到飽，約¥7,800）</a>", tr: "地鐵，約 15–20 分", note: "由大阪城先回市區用餐；可從森之宮搭地鐵到長堀橋，再走去東心齋橋；已確定餐廳，尚未訂位", st: "ok", geo: "東心斎橋, 日本" },
       { tm: "19:30–20:00", t: "道頓堀夜景・御堂筋彩燈散步", d: "免費的聖誕限定點燈，順路看道頓堀夜景", tr: "步行", note: "免費景點，晚餐後順路散步", st: "info", geo: DOTONBORI_ADDR, photo: "images/spots/dotonbori.jpg", photoAlt: "道頓堀夜景", photoCredit: "圖片：Kang-min Liu（CC BY 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:%E5%8A%9B%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%82%88%E3%81%86%E6%97%A5%E6%9C%AC_2014_%E5%A4%A7%E9%98%AA_(12206068196).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
     ],
     mapStops: [
@@ -40,7 +40,7 @@ const TRIP_DAYS = [
     imgCredit: "圖片：663highland（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Osaka_Castle_02bs3200.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
       { tm: "07:30–08:15", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=MONDAY%20VIBES%20COFFEE%20%E9%9B%A3%E6%B3%A2\" target=\"_blank\" rel=\"noopener\">☕ MONDAY VIBES COFFEE（難波駅徒歩1分，7:00開始營業）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
-      { tm: "08:30–10:00", t: "大阪→箕面站", d: "阪急電車轉乘", tr: "電車", note: "依住宿站點估算", st: "info", geo: "箕面駅, 日本" },
+      { tm: "08:30–10:00", t: "大阪→箕面站", d: "從飯店走到 Osaka Metro 難波站，搭御堂筋線到梅田，轉阪急寶塚線到石橋阪大前，再轉箕面線到箕面站", tr: "電車", note: "飯店到箕面站全程約 60–75 分，含轉乘等車，抓寬一點", st: "info", geo: "箕面駅, 日本" },
       { tm: "10:00–13:00", t: "箕面瀑布健行", d: "森林溪流步道往返，約 2–3 小時", tr: "步行", note: "出發前查步道開放及天氣", st: "info", geo: "箕面大滝, 日本", photo: "images/spots/minoh-falls.jpg", photoAlt: "箕面瀑布", photoCredit: "圖片：Kanchi1979（CC BY-SA 4.0）／<a href=\"https://commons.wikimedia.org/wiki/File:JP-Osaka-Minoo-Minootaki_-Over-View.JPG\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "13:00–14:00", t: "箕面午餐", d: "午餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E6%B4%8B%E9%A3%9F%20%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%83%81%E3%82%A7%20%E7%AE%95%E9%9D%A2\" target=\"_blank\" rel=\"noopener\">🍗 洋食 フェリーチェ（箕面駅徒歩2分，招牌大份量炸雞排）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E3%81%B7%E3%82%89%E3%81%AE%E5%B1%B1%20%E7%AE%95%E9%9D%A2%E6%9C%AC%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍤 天ぷらの山 箕面本店（食券制，平價天丼定食）</a>", tr: "步行", note: "餐廳待挑選；用餐後再搭電車返回市區", st: "warn", geo: "箕面駅, 日本" },
       { tm: "14:30–15:30", t: "梅田スカイビル展望台", d: "視體力彈性安排，可省略", tr: "步行／電車", note: "箕面瀑布返回後安排這段；大阪城 Illuminage 已移除，不需趕路", st: "info", geo: "梅田スカイビル, 日本", photo: "images/spots/umeda-sky.jpg", photoAlt: "梅田スカイビル", photoCredit: "圖片：FlyingToaster（CC BY 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Base_of_the_Umeda_Sky_Building.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
@@ -62,8 +62,8 @@ const TRIP_DAYS = [
     date: "12/8", w: "二", region: "大阪", title: "日本環球影城",
     mapOrigin: HOTEL_ADDR,
     rows: [
-      { tm: "06:25–06:50", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E3%81%86%E3%81%A9%E3%82%93%E3%81%9D%E3%81%B0%20%E6%9D%BE%E5%B1%8B%20%E3%81%AA%E3%82%93%E3%81%B0%E9%A7%85\" target=\"_blank\" rel=\"noopener\">🍜 うどんそば 松屋 なんば駅店（早上6:30開始營業，立食讚岐烏龍麵）</a>", tr: "步行", note: "今天要早出發趕開園，選早上6:30就有開的店；餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
-      { tm: "06:50–07:35", t: "前往日本環球影城", d: "JR 至 Universal City，含轉乘抓 40–45 分，目標 7:35 前抵園", tr: "電車", note: "從日本橋搭地鐵到梅田或大阪站轉JR大阪環狀線至西九条，再轉夢咲線直達環球城站，不建議搭計程車", st: "info", geo: "ユニバーサルシティ駅, 日本" },
+      { tm: "06:10–06:35", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E3%81%86%E3%81%A9%E3%82%93%E3%81%9D%E3%81%B0%20%E6%9D%BE%E5%B1%8B%20%E3%81%AA%E3%82%93%E3%81%B0%E9%A7%85\" target=\"_blank\" rel=\"noopener\">🍜 うどんそば 松屋 なんば駅店（早上6:30開始營業，立食讚岐烏龍麵）</a>", tr: "步行", note: "今天要早出發趕開園，選早上6:30就有開的店或外帶；餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
+      { tm: "06:40–07:25", t: "前往日本環球影城", d: "JR 至 Universal City，飯店到園區入口抓 35–50 分，目標 7:25 前抵園排隊", tr: "電車", note: "從日本橋走到難波或搭地鐵到梅田／大阪站轉JR大阪環狀線至西九条，再轉夢咲線直達環球城站，不建議搭計程車；開園時間以 USJ 當日公告為準", st: "info", geo: "ユニバーサルシティ駅, 日本" },
       { tm: "08:00（開園）", t: "入園・App 搶整理券", d: "一入園立刻用官方 App 預約超級任天堂世界「咚奇剛的瘋狂礦車」「庫巴的挑戰書」整理券", tr: "步行", note: "熱門新設施，建議開園前就排隊準備衝第一波，手腳要快", st: "warn" },
       { tm: "08:30–10:30", t: "咚奇剛的瘋狂礦車・庫巴的挑戰書", d: "超級任天堂世界咚奇剛礦山新園區雙設施，依整理券時段前後安排拍照、逛園區造景", tr: "步行", note: "依實際整理券時段彈性調整順序", st: "warn" },
       { tm: "10:30–11:05", t: "小小兵一起合照", d: "小小兵樂園格魯家周邊拍照，可順道看 11:05 場「小小兵酷冬迎賓秀」", tr: "步行", note: "", st: "info" },
@@ -181,11 +181,11 @@ const TRIP_DAYS = [
     imgCredit: "圖片：663highland（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Daibutsu-den_in_Todaiji_Nara02bs3200.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     rows: [
       { tm: "07:50–08:20", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=OSARU%20COFFEE%20%E9%9B%A3%E6%B3%A2\" target=\"_blank\" rel=\"noopener\">🥐 OSARU COFFEE（JR難波駅徒歩3分，8:00開始營業，可頌／烤土司）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
-      { tm: "08:30–10:00", t: "大阪→近鐵奈良", d: "近鐵電車", tr: "電車", note: "難波出發較方便", st: "info", geo: "近鉄奈良駅, 日本" },
+      { tm: "08:30–09:55", t: "大阪→近鐵奈良", d: "從近鐵日本橋站（飯店附近）搭快速急行或急行到近鐵奈良，再步行穿過奈良公園到東大寺", tr: "電車／步行", note: "電車約 35–45 分，加上奈良公園內步行約 20–25 分到東大寺", st: "info", geo: "近鉄奈良駅, 日本" },
       { tm: "10:00–12:30", t: "奈良公園・東大寺", d: "鹿群、古蹟與公園步道", tr: "步行", note: "留意鹿群與餵食規範", st: "info", geo: "東大寺, 日本", photo: "images/spots/todaiji.jpg", photoAlt: "東大寺大佛殿", photoCredit: "圖片：663highland（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Daibutsu-den_in_Todaiji_Nara02bs3200.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "12:30–14:00", t: "奈良午餐", d: "柿葉壽司／日式定食", tr: "步行", note: "自由選擇", st: "info", geo: "奈良町, 日本" },
-      { tm: "14:00–15:00", t: "奈良町散步", d: "老街、咖啡廳", tr: "步行", note: "原排2小時，為了排 Animeal 動物咖啡廳提早結束，提早返回大阪", st: "info", geo: "奈良町, 日本", photo: "images/spots/naramachi.jpg", photoAlt: "奈良町老街", photoCredit: "圖片：Amagase（CC BY-SA 2.5）／<a href=\"https://commons.wikimedia.org/wiki/File:Fabric_shop_in_Nara.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
-      { tm: "15:00–16:00", t: "奈良→難波", d: "近鐵電車返回大阪市區", tr: "電車", note: "提早從奈良回來，為晚上的動物咖啡廳留時間", st: "info", geo: "近鉄奈良駅, 日本" },
+      { tm: "14:00–14:45", t: "奈良町散步", d: "老街、咖啡廳", tr: "步行", note: "原排2小時，為了排 Animeal 動物咖啡廳提早結束，提早返回大阪", st: "info", geo: "奈良町, 日本", photo: "images/spots/naramachi.jpg", photoAlt: "奈良町老街", photoCredit: "圖片：Amagase（CC BY-SA 2.5）／<a href=\"https://commons.wikimedia.org/wiki/File:Fabric_shop_in_Nara.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
+      { tm: "14:45–15:50", t: "奈良→難波", d: "近鐵快速急行或急行返回大阪難波", tr: "電車", note: "電車約 35–45 分；14:45 左右離開奈良町，把走回車站、等車、出站後步行一起算進去，才能準時接上 16:15 的 Animeal", st: "info", geo: "近鉄奈良駅, 日本" },
       { tm: "16:15–17:15", t: "Animeal 動物たちが暮らす森", d: "<a href=\"https://animeal.jp/shinsaibashi/enjoy.html\" target=\"_blank\" rel=\"noopener\">🐰 Animeal 西心齋橋店（アニミル，都市型ふれあい動物園）</a>，可與兔子、天竺鼠、羊駝、鳥類、刺蝟、雪貂、大斑獛互動，含零食體驗", tr: "步行／地鐵，約 10 分", note: "地址：西心斎橋1-8-11；營業12:00–19:00，最終受理18:00，每週二公休（12/9為週三，正常營業）；大人60分¥2,200／90分¥2,800／120分¥3,300，小孩(4–12歲)¥990，建議提早到", st: "warn", geo: "大阪府大阪市中央区西心斎橋1-8-11, 日本" },
       { tm: "17:40–19:00", t: "通天閣・新世界晚餐", d: "新世界晚餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E4%B8%B2%E3%82%AB%E3%83%84%20%E3%81%84%E3%81%A3%E3%81%A8%E3%81%8F%20%E6%96%B0%E4%B8%96%E7%95%8C\" target=\"_blank\" rel=\"noopener\">🍢 串カツ いっとく 新世界（在地人推薦，平價串炸，一支 90 日圓起）</a>、<a href=\"https://maps.app.goo.gl/3SvXo5mePt3mHdZP8\" target=\"_blank\" rel=\"noopener\">🍜 無鐵砲 大阪店（豚骨拉麵，Google 評分 3.9）</a>", tr: "地鐵，約 20–30 分", note: "從 Animeal 所在的西心齋橋轉地鐵過去；累的話可直接回飯店；餐廳待挑選", st: "warn", geo: "通天閣, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Shinsekai_-_Shinsekai34.jpg", photoAlt: "通天閣與新世界", photoCredit: "圖片：lumoplank（CC0）／<a href=\"https://commons.wikimedia.org/wiki/File:Shinsekai_-_Shinsekai34.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "19:15–20:15", t: "天王寺 Tenshiba 聖誕市集", d: "免費入場的聖誕市集，逛完直接返回飯店休息", tr: "步行", note: "免費景點，順路就去看看", st: "info", geo: "てんしば, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Illuminated_Tenn%C5%8Dji_Park_and_Abeno_Harukas%2C_November_2015%2C_Osaka.jpg", photoAlt: "天王寺公園聖誕點燈", photoCredit: "圖片：Laitche（CC BY-SA 4.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Illuminated_Tenn%C5%8Dji_Park_and_Abeno_Harukas,_November_2015,_Osaka.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
@@ -203,15 +203,15 @@ const TRIP_DAYS = [
     date: "12/10", w: "四", region: "京都", title: "東山・祇園",
     mapOrigin: HOTEL_ADDR,
     rows: [
-      { tm: "07:20–07:50", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=MONDAY%20VIBES%20COFFEE%20%E9%9B%A3%E6%B3%A2\" target=\"_blank\" rel=\"noopener\">☕ MONDAY VIBES COFFEE（難波駅徒歩1分，7:00開始營業）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
-      { tm: "08:00–09:30", t: "大阪→清水寺", d: "JR 至京都站，轉巴士（100／206 號）至五条坂或清水道", tr: "電車／巴士", note: "第一次來京都的經典路線，不去嵐山，整天集中在東山一帶", st: "info", geo: "京都駅, 日本" },
+      { tm: "07:15–07:45", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=MONDAY%20VIBES%20COFFEE%20%E9%9B%A3%E6%B3%A2\" target=\"_blank\" rel=\"noopener\">☕ MONDAY VIBES COFFEE（難波駅徒歩1分，7:00開始營業）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
+      { tm: "07:50–09:30", t: "大阪→清水寺", d: "日本橋走到地鐵難波站→北濱（堺筋線），轉京阪特急到丹波橋，再轉有停清水五條的車，出站走 20–25 分上坡到清水寺", tr: "地鐵／京阪", note: "全程抓 80–100 分，比京都站轉巴士更順，可避開尖峰巴士人潮；第一次來京都的經典路線，不去嵐山，整天集中在東山一帶", st: "info", geo: "京都駅, 日本" },
       { tm: "09:30–11:30", t: "清水寺參拜", d: "本堂、音羽之瀧，可遠眺京都市景", tr: "步行", note: "人多時建議一開放就進場", st: "info", geo: "清水寺, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/e/e1/At_Kyoto_2024_485.jpg", photoAlt: "清水寺", photoCredit: "圖片：Mike Peel（CC BY-SA 4.0）／<a href=\"https://commons.wikimedia.org/wiki/File:At_Kyoto_2024_485.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "11:30–12:30", t: "二年坂・三年坂散策", d: "石板老街、京都風小物與伴手禮店", tr: "步行", note: "從清水寺一路下坡走到八坂神社", st: "info", geo: "二年坂, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Gion_-_Nineizaka_%28Ninenzaka%29%2C_Kyoto%2C_Japan_%2848923272228%29.jpg", photoAlt: "二年坂", photoCredit: "圖片：Domenico Convertini（CC BY-SA 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Gion_-_Nineizaka_(Ninenzaka),_Kyoto,_Japan_(48923272228).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "12:30–13:30", t: "午餐", d: "午餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E5%8F%A4%E5%B1%8B%E8%8C%B6%E5%B1%8B%20%E4%BA%AC%E9%83%BD%20%E4%BA%8C%E5%B9%B4%E5%9D%82\" target=\"_blank\" rel=\"noopener\">🍵 阿古屋茶屋（二年坂・三年坂沿線，招牌お茶漬け吃到飽，配約20種漬物）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E3%81%AE%E7%B1%B3%E6%96%99%E4%BA%AD%20%E5%85%AB%E4%BB%A3%E7%9B%AE%E5%84%80%E5%85%B5%E8%A1%9B%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 京の米料亭 八代目儀兵衛 祇園本店（八坂神社附近人氣排隊店，白米定食）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: "二年坂, 日本" },
       { tm: "13:30–14:30", t: "八坂神社參拜", d: "祇園入口的神社，朱紅色西門樓為代表景", tr: "步行", note: "二年坂走下來剛好接上", st: "info", geo: "八坂神社, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/8/86/Nishiromon_Gate%2C_Yasaka_Shrine%2C_Kyoto%2C_West_view_20190416_1.jpg", photoAlt: "八坂神社西樓門", photoCredit: "圖片：DXR（CC BY-SA 4.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Nishiromon_Gate,_Yasaka_Shrine,_Kyoto,_West_view_20190416_1.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "14:30–16:00", t: "祇園散策", d: "花見小路、巽橋，傳統茶屋建築街區", tr: "步行", note: "留意拍照禮儀，私有巷弄不可進入", st: "info", geo: "祇園 花見小路, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/9/9e/20111023_Gion2.jpg", photoAlt: "祇園花見小路", photoCredit: "圖片：Rainer Haeßner（CC BY-SA 3.0）／<a href=\"https://commons.wikimedia.org/wiki/File:20111023_Gion2.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "16:00–17:00", t: "鴨川畔散步", d: "四條大橋周邊河岸，傍晚景色", tr: "步行", note: "從祇園走到鴨川約 10 分", st: "info", geo: "四条大橋, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/2015-10-15_Kamo_River.jpg", photoAlt: "鴨川", photoCredit: "圖片：John Gillespie（CC BY-SA 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:2015-10-15_Kamo_River.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
-      { tm: "17:00–18:30", t: "返回大阪", d: "京阪／JR 轉乘，不在京都吃晚餐，回大阪再用餐", tr: "電車", note: "避免過晚回飯店", st: "info", geo: "京都駅, 日本" },
+      { tm: "17:00–18:30", t: "返回大阪", d: "從祇園四條搭京阪特急直回北濱，轉堺筋線回日本橋，不在京都吃晚餐，回大阪再用餐", tr: "京阪／地鐵", note: "這條路線可省掉大阪、京都兩邊大站的轉乘，避免過晚回飯店", st: "info", geo: "京都駅, 日本" },
       { tm: "18:30–20:00", t: "難波晚餐", d: "晚餐候選：<a href=\"https://maps.app.goo.gl/ebhKwpfgNvwtneaKA\" target=\"_blank\" rel=\"noopener\">🍢 BATTEN YOKATO AMERIKAMURA（美國村博多串燒）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%BB%91%E8%88%B9%20DOTONBORI%20KUROFUNE\" target=\"_blank\" rel=\"noopener\">🍣 黑船 DOTONBORI KUROFUNE（道頓堀迴轉壽司，現切生魚片秀）</a>", tr: "步行／地鐵", note: "回大阪後再用餐，餐廳待挑選", st: "warn", geo: "難波, 日本" },
     ],
     mapStops: [
@@ -227,9 +227,9 @@ const TRIP_DAYS = [
     date: "12/11", w: "五", region: "大阪", title: "市場早餐・返程",
     mapOrigin: HOTEL_ADDR,
     rows: [
-      { tm: "08:00–10:00", t: "木津市場", d: "早餐、逛市場", tr: "步行／地鐵", note: "市場營業時間需確認", st: "warn", geo: "木津卸売市場, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Osaka_Kizu_Wholesale_Market_%2840473538664%29.jpg", photoAlt: "木津市場", photoCredit: "圖片：m-louis（CC BY-SA 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Osaka_Kizu_Wholesale_Market_(40473538664).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
-      { tm: "10:00", t: "飯店退房", d: "Apartment Hotel 11 Kuromon 2（住一 黑門2号店）退房", tr: "步行", note: "", st: "info", geo: HOTEL_ADDR },
-      { tm: "10:30–13:30", t: "前往關西機場・報到", d: "南海電鐵／JR 至關西機場，預留國際線報到與安檢時間", tr: "南海電鐵／JR", note: "AK171 第一航廈起飛，國際線建議提早 2–3 小時報到", st: "info", geo: "関西国際空港, 日本" },
+      { tm: "08:00–09:15", t: "木津市場", d: "早餐、逛市場", tr: "步行／地鐵", note: "從飯店走約 15–20 分；市場營業時間需確認", st: "warn", geo: "木津卸売市場, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Osaka_Kizu_Wholesale_Market_%2840473538664%29.jpg", photoAlt: "木津市場", photoCredit: "圖片：m-louis（CC BY-SA 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Osaka_Kizu_Wholesale_Market_(40473538664).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
+      { tm: "09:45–10:00", t: "飯店退房", d: "回飯店拿行李，Apartment Hotel 11 Kuromon 2（住一 黑門2号店）退房", tr: "步行", note: "", st: "info", geo: HOTEL_ADDR },
+      { tm: "10:00–11:20", t: "前往關西機場・報到", d: "走去南海難波，目標搭上 10:15–10:35 左右的空港急行，約 11:00–11:20 抵達關西機場站，再走到第一航廈", tr: "南海電鐵（空港急行）", note: "建議 11:15 左右到 T1 報到，尤其有託運行李時；上述是抓時間的目標，實際班次仍要看當天時刻表", st: "info", geo: "関西国際空港, 日本" },
       { tm: "14:10", t: "搭乘 AK171 返回高雄", d: "關西機場（KIX）第一航廈 14:10 起飛，預計 16:30 抵達小港國際機場（KHH）國際航廈", tr: "", note: "亞洲航空 AK171，訂位代號 PDINPM；飛行時間約 3 小時 20 分", st: "ok", geo: "関西国際空港, 日本" },
     ],
     mapStops: [
@@ -240,14 +240,14 @@ const TRIP_DAYS = [
 ];
 
 const TRIP_ROUTES = [
-  { route: "關西機場→難波", mode: "南海電鐵", time: "約 40–60 分鐘", note: "依車種與飯店位置調整" },
-  { route: "大阪→箕面", mode: "阪急", time: "約 45–75 分鐘", note: "從梅田轉乘" },
-  { route: "大阪難波→近鐵奈良", mode: "近鐵", time: "約 40–50 分鐘", note: "依車種" },
+  { route: "關西機場→難波", mode: "南海電鐵（空港急行）", time: "約 44 分鐘", note: "出站走到飯店約 10–15 分；想搭有指定座位的 Rapi:t 需另加買特急券" },
+  { route: "大阪→箕面", mode: "阪急", time: "約 60–75 分鐘", note: "日本橋→難波轉御堂筋線到梅田，再轉寶塚線到石橋阪大前、轉箕面線" },
+  { route: "大阪難波→近鐵奈良", mode: "近鐵", time: "約 35–45 分鐘", note: "近鐵日本橋站離飯店更近，快速急行／急行皆可" },
   { route: "近鐵奈良→新世界", mode: "近鐵＋地鐵", time: "約 55–75 分鐘", note: "依路線" },
-  { route: "大阪→日本環球影城", mode: "JR", time: "約 20–45 分鐘", note: "依住宿位置" },
-  { route: "大阪→清水寺", mode: "JR＋巴士", time: "約 60–90 分鐘", note: "京都站轉巴士，尖峰時段較擠" },
-  { route: "祇園／河原町→大阪", mode: "京阪／JR", time: "約 45–60 分鐘", note: "依車種" },
-  { route: "大阪→關西機場", mode: "南海／JR", time: "約 40–70 分鐘", note: "預留報到時間" },
+  { route: "大阪→日本環球影城", mode: "JR", time: "約 35–50 分鐘", note: "日本橋走到難波或搭地鐵到梅田／大阪站轉JR環狀線至西九条，再轉夢咲線" },
+  { route: "大阪→清水寺", mode: "地鐵＋京阪", time: "約 80–100 分鐘", note: "難波轉北濱（堺筋線），轉京阪特急到丹波橋再轉車到清水五條，出站上坡走 20–25 分，比京都站轉巴士更順" },
+  { route: "祇園／河原町→大阪", mode: "京阪＋地鐵", time: "約 45–60 分鐘", note: "祇園四條搭京阪特急到北濱，轉堺筋線回日本橋" },
+  { route: "大阪→關西機場", mode: "南海電鐵（空港急行）", time: "約 40–45 分鐘", note: "難波出發，預留報到時間" },
 ];
 
 const TRIP_BUDGET = [
@@ -266,7 +266,7 @@ const TRIP_PACKING = [
   "護照正本（效期 6 個月以上）＋ 影本",
   "機票／訂房確認單（紙本或手機截圖）",
   "日幣現金＋一張可海外提款的卡",
-  "交通系 IC 卡（Suica／ICOCA）或現金備用",
+  "ICOCA 交通卡（建議每人一張，電車／地鐵／南海／阪急／京阪／近鐵都可直接刷卡；搭 Rapi:t 等指定席列車需另加買特急券）",
   "轉接頭與行動電源",
   "保暖外套（12 月日本偏涼，早晚溫差大）",
   "輕便雨具",
