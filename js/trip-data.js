@@ -264,6 +264,7 @@ const TRIP_BUDGET = [
 
 const TRIP_PACKING = [
   "<a href=\"https://www.vjw.digital.go.jp/main/#/vjwplo001\" target=\"_blank\" rel=\"noopener\">Visit Japan Web</a> 線上登錄護照、入境審查與海關申報資料，出發前產生 QR Code（建議提早在家完成，入境時可省去紙本表單）",
+  "日本 eSIM（STUDIO A KDDI 7 日無限流量）已安裝：抵達日本前請先關閉 eSIM（提早開啟可能顯示「正在啟用」或無法啟用），抵達後再啟用此連線並關閉數據漫遊",
   "護照正本（效期 6 個月以上）＋ 影本",
   "機票／訂房確認單（紙本或手機截圖）",
   "日幣現金＋一張可海外提款的卡",
