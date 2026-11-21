@@ -207,7 +207,7 @@ const TRIP_DAYS = [
     mapOrigin: HOTEL_ADDR,
     rows: [
       { tm: "07:15–07:45", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=MONDAY%20VIBES%20COFFEE%20%E9%9B%A3%E6%B3%A2\" target=\"_blank\" rel=\"noopener\">☕ MONDAY VIBES COFFEE（難波駅徒歩1分，7:00開始營業）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
-      { tm: "07:50–09:30", t: "大阪→清水寺", d: "日本橋走到地鐵難波站→北濱（堺筋線），轉京阪特急到丹波橋，再轉有停清水五條的車，出站走 20–25 分上坡到清水寺", tr: "地鐵／京阪", note: "全程抓 80–100 分，比京都站轉巴士更順，可避開尖峰巴士人潮；第一次來京都的經典路線，不去嵐山，整天集中在東山一帶", st: "info", geo: "京都駅, 日本" },
+      { tm: "07:50–09:30", t: "大阪→清水寺", d: "日本橋走到地鐵難波站，轉御堂筋線到梅田接JR京都線新快速到京都駅，再從京都車站附近搭計程車到清水坂一帶，下車步行進寺參觀", tr: "地鐵／JR／計程車", note: "JR新快速大阪→京都約 29 分，比原本地鐵＋京阪多次轉乘更省事；京都駅到清水坂計程車約 15–20 分，車資估約 ¥1,500–2,000（尖峰時段視路況調整）；第一次來京都的經典路線，不去嵐山，整天集中在東山一帶", st: "info", geo: "京都駅, 日本" },
       { tm: "09:30–11:30", t: "清水寺參拜", d: "本堂、音羽之瀧，可遠眺京都市景", tr: "步行", note: "人多時建議一開放就進場", st: "info", geo: "清水寺, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/e/e1/At_Kyoto_2024_485.jpg", photoAlt: "清水寺", photoCredit: "圖片：Mike Peel（CC BY-SA 4.0）／<a href=\"https://commons.wikimedia.org/wiki/File:At_Kyoto_2024_485.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "11:30–12:30", t: "二年坂・三年坂散策", d: "石板老街、京都風小物與伴手禮店", tr: "步行", note: "從清水寺一路下坡走到八坂神社", st: "info", geo: "二年坂, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Gion_-_Nineizaka_%28Ninenzaka%29%2C_Kyoto%2C_Japan_%2848923272228%29.jpg", photoAlt: "二年坂", photoCredit: "圖片：Domenico Convertini（CC BY-SA 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:Gion_-_Nineizaka_(Ninenzaka),_Kyoto,_Japan_(48923272228).jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "12:30–13:30", t: "午餐", d: "午餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E5%8F%A4%E5%B1%8B%E8%8C%B6%E5%B1%8B%20%E4%BA%AC%E9%83%BD%20%E4%BA%8C%E5%B9%B4%E5%9D%82\" target=\"_blank\" rel=\"noopener\">🍵 阿古屋茶屋（二年坂・三年坂沿線，招牌お茶漬け吃到飽，配約20種漬物）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E3%81%AE%E7%B1%B3%E6%96%99%E4%BA%AD%20%E5%85%AB%E4%BB%A3%E7%9B%AE%E5%84%80%E5%85%B5%E8%A1%9B%20%E7%A5%87%E5%9C%92%E6%9C%AC%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 京の米料亭 八代目儀兵衛 祇園本店（八坂神社附近人氣排隊店，白米定食）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: "二年坂, 日本" },
@@ -248,7 +248,7 @@ const TRIP_ROUTES = [
   { route: "大阪難波→近鐵奈良", mode: "近鐵", time: "約 35–45 分鐘", note: "近鐵日本橋站離飯店更近，快速急行／急行皆可" },
   { route: "近鐵奈良→新世界", mode: "近鐵＋地鐵", time: "約 55–75 分鐘", note: "依路線" },
   { route: "大阪→日本環球影城", mode: "JR", time: "約 35–50 分鐘", note: "日本橋走到難波或搭地鐵到梅田／大阪站轉JR環狀線至西九条，再轉夢咲線" },
-  { route: "大阪→清水寺", mode: "地鐵＋京阪", time: "約 80–100 分鐘", note: "難波轉北濱（堺筋線），轉京阪特急到丹波橋再轉車到清水五條，出站上坡走 20–25 分，比京都站轉巴士更順" },
+  { route: "大阪→清水寺", mode: "JR＋計程車", time: "約 70–90 分鐘", note: "難波轉御堂筋線到梅田接JR京都線新快速到京都駅，再從車站搭計程車到清水坂，步行進寺；比地鐵＋京阪轉乘更省事" },
   { route: "祇園／河原町→大阪", mode: "京阪＋地鐵", time: "約 45–60 分鐘", note: "祇園四條搭京阪特急到北濱，轉堺筋線回日本橋" },
   { route: "大阪→關西機場", mode: "南海電鐵（空港急行）", time: "約 40–45 分鐘", note: "難波出發，預留報到時間" },
 ];
