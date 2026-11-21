@@ -895,6 +895,7 @@ ul {
 
 .day-chips {
   display: flex;
+  justify-content: center;
   gap: 4px;
   overflow-x: auto;
   padding-top: 10px;
