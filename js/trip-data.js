@@ -201,6 +201,9 @@ const TRIP_DAYS = [
   },
   {
     date: "12/10", w: "四", region: "京都", title: "東山・祇園",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e1/At_Kyoto_2024_485.jpg",
+    imgAlt: "清水寺",
+    imgCredit: "圖片：Mike Peel（CC BY-SA 4.0）／<a href=\"https://commons.wikimedia.org/wiki/File:At_Kyoto_2024_485.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>",
     mapOrigin: HOTEL_ADDR,
     rows: [
       { tm: "07:15–07:45", t: "日本橋早餐", d: "早餐候選：<a href=\"https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E6%9C%AC%E3%82%80%E3%81%AA%E3%81%97%20%E6%97%A5%E6%9C%AC%E6%A9%8B3%E4%B8%81%E7%9B%AE%E5%BA%97\" target=\"_blank\" rel=\"noopener\">🍚 宮本むなし 日本橋3丁目店（24小時營業，定食／丼飯）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=MONDAY%20VIBES%20COFFEE%20%E9%9B%A3%E6%B3%A2\" target=\"_blank\" rel=\"noopener\">☕ MONDAY VIBES COFFEE（難波駅徒歩1分，7:00開始營業）</a>", tr: "步行", note: "餐廳待挑選", st: "warn", geo: HOTEL_ADDR },
