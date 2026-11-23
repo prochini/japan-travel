@@ -219,6 +219,7 @@ const TRIP_DAYS = [
       { tm: "16:00–17:00", t: "鴨川畔散步", d: "四條大橋周邊河岸，傍晚景色", tr: "步行", note: "從祇園走到鴨川約 10 分", st: "info", geo: "四条大橋, 日本", photo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/2015-10-15_Kamo_River.jpg", photoAlt: "鴨川", photoCredit: "圖片：John Gillespie（CC BY-SA 2.0）／<a href=\"https://commons.wikimedia.org/wiki/File:2015-10-15_Kamo_River.jpg\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>" },
       { tm: "17:00–18:30", t: "返回大阪", d: "從祇園四條搭京阪特急直回北濱，轉堺筋線回日本橋，不在京都吃晚餐，回大阪再用餐", tr: "京阪／地鐵", note: "這條路線可省掉大阪、京都兩邊大站的轉乘，避免過晚回飯店", st: "info", geo: "京都駅, 日本" },
       { tm: "18:30–20:00", t: "難波晚餐", d: "晚餐候選：<a href=\"https://maps.app.goo.gl/ebhKwpfgNvwtneaKA\" target=\"_blank\" rel=\"noopener\">🍢 BATTEN YOKATO AMERIKAMURA（美國村博多串燒）</a>、<a href=\"https://www.google.com/maps/search/?api=1&query=%E9%BB%91%E8%88%B9%20DOTONBORI%20KUROFUNE\" target=\"_blank\" rel=\"noopener\">🍣 黑船 DOTONBORI KUROFUNE（道頓堀迴轉壽司，現切生魚片秀）</a>、<a href=\"https://maps.app.goo.gl/qqMH6QmNaa9mrQCc6\" target=\"_blank\" rel=\"noopener\">🍣 Sushi Sakaba Sashisu（心齋橋周邊壽司居酒屋）</a>", tr: "步行／地鐵", note: "回大阪後再用餐，餐廳待挑選", st: "warn", geo: "難波, 日本" },
+      { tm: "20:00–20:30", t: "LIFE 超市購物", d: "LIFE セントラルスクエアなんば店（JR難波駅旁），逛超市採買零食、飲料、伴手禮", tr: "步行", note: "營業到24:00（熟食／日用品區到22:00，藥妝到21:45），晚餐後順路逛，再走回日本橋飯店", st: "info", geo: "大阪府大阪市浪速区湊町1-2-3, 日本" },
     ],
     mapStops: [
       { name: "京都站", lat: 34.9858, lng: 135.7588, q: "京都駅, 日本" },
@@ -227,6 +228,7 @@ const TRIP_DAYS = [
       { name: "八坂神社", lat: 35.0037, lng: 135.7786, q: "八坂神社, 日本" },
       { name: "祇園・花見小路", lat: 35.0034, lng: 135.7756, q: "祇園 花見小路, 日本" },
       { name: "鴨川・四條大橋", lat: 35.0037, lng: 135.7699, q: "四条大橋, 日本" },
+      { name: "LIFE なんば店", lat: 34.6615, lng: 135.5003, q: "大阪府大阪市浪速区湊町1-2-3, 日本" },
     ],
   },
   {
